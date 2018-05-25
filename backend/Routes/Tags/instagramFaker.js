@@ -4,7 +4,7 @@ var sampleData = {
         "type": "image",
         "users_in_photo": [],
         "filter": "Earlybird",
-        "tags": ["expobar"],
+        "tags": ["expobar", 'lolcat'],
         "comments": {
             "count": 0
         },
@@ -64,10 +64,11 @@ var sampleData = {
                 "url": "http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_101.mp4",
                 "width": 640,
                 "height": 640
-            },
+            }
+          },
         "users_in_photo": null,
         "filter": "Vesper",
-        "tags": [],
+        "tags": ['lolcat','catlol', 'maike_is_cute_af'],
         "comments": {
             "count": 2
         },
@@ -169,7 +170,8 @@ var sampleData = {
                 "url": "http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_101.mp4",
                 "width": 640,
                 "height": 640
-            },
+            }
+          },
         "users_in_photo": null,
         "filter": "Vesper",
         "tags": [],
@@ -274,7 +276,8 @@ var sampleData = {
                 "url": "http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_101.mp4",
                 "width": 640,
                 "height": 640
-            },
+            }
+          },
         "users_in_photo": null,
         "filter": "Vesper",
         "tags": [],
@@ -379,7 +382,8 @@ var sampleData = {
                 "url": "http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_101.mp4",
                 "width": 640,
                 "height": 640
-            },
+            }
+          },
         "users_in_photo": null,
         "filter": "Vesper",
         "tags": [],
@@ -419,7 +423,7 @@ var sampleData = {
             "longitude": -122.3948632,
             "name": "Instagram"
         }
-    },
+    }
   ]
 }
 
