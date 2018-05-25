@@ -1,3 +1,6 @@
-h1 trendanalyzer
+.application
 
-= outlet
+  = nav-bar
+
+  .container
+    == outlet

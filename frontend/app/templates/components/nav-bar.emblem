@@ -1,0 +1,17 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand href="/"  LOGO
+  button.navbar-toggler aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-target="#navbarNav" data-toggle="collapse" type="button"
+    span.navbar-toggler-icon
+  #navbarNav.collapse.navbar-collapse
+    ul.navbar-nav
+      = link-to "tags" tagName='li' class="nav-item"
+        = link-to "tags" class="nav-link"
+          |&nbsp;&nbsp;Trending Tags
+
+      = link-to "about" tagName='li' class="nav-item"
+        = link-to "about" class="nav-link"
+          |&nbsp;&nbsp;About
+
+      = link-to "imprint" tagName='li' class="nav-item"
+        = link-to "imprint" class="nav-link"
+          |&nbsp;&nbsp;Imprint
