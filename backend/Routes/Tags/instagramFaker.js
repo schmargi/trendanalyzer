@@ -174,7 +174,7 @@ var sampleData = {
           },
         "users_in_photo": null,
         "filter": "Vesper",
-        "tags": [],
+        "tags": ["scheiß"],
         "comments": {
             "count": 2
         },
@@ -280,7 +280,7 @@ var sampleData = {
           },
         "users_in_photo": null,
         "filter": "Vesper",
-        "tags": [],
+        "tags": ["hans"],
         "comments": {
             "count": 2
         },
@@ -386,7 +386,7 @@ var sampleData = {
           },
         "users_in_photo": null,
         "filter": "Vesper",
-        "tags": [],
+        "tags": ["geilausgefüllt"],
         "comments": {
             "count": 2
         },

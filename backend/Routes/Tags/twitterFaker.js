@@ -7,7 +7,18 @@
                           "text": "From pilot to astronaut, Robert H. Lawrence was the first African-American to be selected as an astronaut by any na… https://t.co/FjPEWnh804",
                           "truncated": true,
                           "entities": {
-                                  "hashtags": [],
+                                  "hashtags": [
+                                          {
+                                                  "text": "maikeistgeil",
+                                                  "indices": [
+                                                          19,
+                                                          28
+                                                  ]
+                                          },
+                                          {
+                                                  "text": "tags"
+                                          }
+                                  ],
                                   "symbols": [],
                                   "user_mentions": [],
                                   "urls": [
@@ -142,7 +153,15 @@
                           "text": "A magnetic power struggle of galactic proportions - new research highlights the role of the Sun's magnetic landscap… https://t.co/29dZgga54m",
                           "truncated": true,
                           "entities": {
-                                  "hashtags": [],
+                                  "hashtags": [
+                                          {
+                                                  "text": "yeahboy",
+                                                  "indices": [
+                                                          19,
+                                                          28
+                                                  ]
+                                          }
+                                  ],
                                   "symbols": [],
                                   "user_mentions": [],
                                   "urls": [
@@ -277,7 +296,15 @@
                           "text": "Someone's got to be first. In space, the first explorers beyond Mars were Pioneers 10 and 11, twin robots who chart… https://t.co/SUX30Y45mr",
                           "truncated": true,
                           "entities": {
-                                  "hashtags": [],
+                                  "hashtags": [
+                                          {
+                                                  "text": "yeahbuddy",
+                                                  "indices": [
+                                                          19,
+                                                          28
+                                                  ]
+                                          }
+                                  ],
                                   "symbols": [],
                                   "user_mentions": [],
                                   "urls": [
@@ -412,7 +439,15 @@
                           "text": "宇宙ステーションでも、日本と9時間の時差で月曜日が始まりました。n今週は6人から3人にクルーのサイズダウンがありますが、しっかりと任されているタスクをこなしたいと思います。nn写真は、NASAの実験施設「ディスティニー」のグローブ… https://t.co/2CYoPV6Aqx",
                           "truncated": true,
                           "entities": {
-                                  "hashtags": [],
+                                  "hashtags": [
+                                          {
+                                                  "text": "siesprichtnichtmehr",
+                                                  "indices": [
+                                                          19,
+                                                          28
+                                                  ]
+                                          }
+                                  ],
                                   "symbols": [],
                                   "user_mentions": [],
                                   "urls": [
@@ -983,6 +1018,6 @@
           }
   }
 
-  module.export = {
+  module.exports = {
     sampleData:sampleData
   }

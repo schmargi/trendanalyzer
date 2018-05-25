@@ -30,22 +30,26 @@ router.get('/', function (req, res) {
       text = item.caption.text;
     }
 
-    return new Post(text, item.link, item.tags, item.created_time, "Regensburg", {"name": item.user.username, "retweet_count": 0}, "INSTAGRAM", {"type": item.type, "url": url}, item.likes.count, 0, false);
+    return new Post(text, item.link, item.tags, item.created_time, "Regensburg", {"name": item.user.username, "followers_count": 0}, "INSTAGRAM", {"type": item.type, "url": url}, item.likes.count, 0, false);
+  });
+
+  var twitterPosts = twitterFaker.sampleData.statuses.map( item => {
+    var hashtags = item.entities.hashtags.map(hashtag =>  hashtag.text);
+    tags.push(...hashtags);
+    return new Post(item.text, item.entities.urls[0].expanded_url, hashtags, item.created_at, "Regensburg", {"name": item.user.name, "followers_count": item.followers_count}, "TWITTER", null, item.favorite_count, item.retweet_count, false);
   });
 
   tags = _.uniq(tags);
 
   tags = tags.map(tag => {
-    var fittingPosts = instagramPosts.filter(post => {
+    var fittingPosts = [];
+    fittingPosts.push(...twitterPosts);
+    fittingPosts.push(...instagramPosts);
+    fittingPosts = fittingPosts.filter(post => {
       return post.tags.includes(tag);
     });
-
     return new Tag(tag, false, fittingPosts);
   });
-
-
-  console.log(tags);
-
   res.status(200).send({tags: tags});
 });
 
