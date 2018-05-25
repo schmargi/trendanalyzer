@@ -55,7 +55,7 @@ router.get('/', function (req, res) {
     });
     return new Tag(tag, false, fittingPosts);
   });
-  res.status(200).send({data: tags});
+  res.status(200).send({tags: tags});
 });
 
 module.exports = router;
