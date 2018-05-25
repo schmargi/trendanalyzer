@@ -1,0 +1,1 @@
+/Users/maike/dev/trendanalyzer/frontend/tmp/funnel-input_base_path-bmH6DW73.tmp/app-config.js

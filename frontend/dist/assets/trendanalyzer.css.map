@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "trendanalyzer.css",
+	"sourceRoot": "/Users/maike/dev/trendanalyzer/frontend/app/styles",
+	"sources": [
+		"../../sass_compiler-input_base_path-1p2kTcPA.tmp/app/styles/app.scss"
+	],
+	"sourcesContent": [
+		""
+	],
+	"names": [],
+	"mappings": ""
+}

@@ -1,0 +1,1 @@
+/Users/maike/dev/trendanalyzer/frontend/node_modules/ember-source/dist/ember.prod.js

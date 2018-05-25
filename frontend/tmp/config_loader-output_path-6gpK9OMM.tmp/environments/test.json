@@ -1,0 +1,1 @@
+{"modulePrefix":"trendanalyzer","environment":"test","rootURL":"/","locationType":"none","EmberENV":{"FEATURES":{},"EXTEND_PROTOTYPES":{"Date":false}},"APP":{"LOG_ACTIVE_GENERATION":false,"LOG_VIEW_LOOKUPS":false,"rootElement":"#ember-testing","autoboot":false,"name":"trendanalyzer","version":"0.0.0"},"exportApplicationGlobal":true}
