@@ -1,1 +1,6 @@
 h1 hallo
+
+= each model as |tag|
+  p = tag.title
+  = each tag.posts as |post|
+    p = post.text
