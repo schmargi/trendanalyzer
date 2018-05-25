@@ -1,0 +1,14 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "git@github.com:schmargi/trendanalyzer.git",
+  "author": "Hans Schuller <hsch@num42.de>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.3",
+    "express": "^4.15.3",
+    "moment": "^2.18.1"
+  }
+}
