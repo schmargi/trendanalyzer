@@ -1,5 +1,6 @@
 module.exports = class Post {
-  constructor(text, url, tags, timestamp, city, user, origin, media, like_count, retweet_count, is_favorite) {
+  constructor(id, text, url, tags, timestamp, city, user, origin, media, like_count, retweet_count, is_favorite) {
+    this.id = id;
     this.text = text;
     this.url = url;
     this.tags = tags;

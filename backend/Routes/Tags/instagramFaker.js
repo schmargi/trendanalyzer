@@ -1,3 +1,27 @@
+var faker = require('faker');
+faker.locale = "de";
+
+var fake = function() {
+  return {
+    "type": "image",
+    "images": {
+      "standard_resolution": {
+        "url": faker.image.cats()
+      }
+    },
+    "user": {
+      "username": faker.internet.userName()
+    },
+    "likes": {
+      "count": faker.random.number(42)
+    },
+    "caption": {
+      "text": faker.random.words(8)
+    },
+    "created_time": faker.random.number(1200000000),
+    "tags": [faker.random.word(), faker.random.word()]
+  };
+};
 
 var sampleData = {
     "data": [{
@@ -428,5 +452,6 @@ var sampleData = {
 }
 
 module.exports = {
-  sampleData: sampleData
+  sampleData: sampleData,
+  fake: fake
 }

@@ -10,19 +10,24 @@ var Tag = require('./tag');
 router.use(bodyParser.json());
 
 router.get('/', function (req, res) {
-
   var tags = [];
 
 
-  var instagramPosts = instagramFaker.sampleData.data.map( item => {
+  var instagramPosts = instagramFaker.sampleData.data;
+
+  for (var i = 0; i < 10; i++) {
+    instagramPosts.push(instagramFaker.fake());
+  }
+
+  instagramPosts.map( item => {
 
     tags.push(...item.tags);
     //nullable values
     var url = "";
     if (item.type == "video") {
-      url = item.videos.standard_resolution;
+      url = item.videos.standard_resolution.url;
     } else {
-      url = item.images.standard_resolution;
+      url = item.images.standard_resolution.url;
     }
     var text = "";
 
