@@ -7,6 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('imprint');
+  this.route('about');
+  this.route('tags');
 });
 
 export default Router;
