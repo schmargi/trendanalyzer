@@ -1,4 +1,5 @@
-var faker = require('faker');
+var moment = require("moment");
+var faker = require("faker");
 faker.locale = "de";
 
 var fake = function() {
@@ -33,8 +34,8 @@ var sampleData = {
             "count": 0
         },
         "caption": {
-            "created_time": "1296532028",
-            "text": "@mikeyk pulls a shot on our #Expobar 123",
+            "created_time": moment().format('MMMM Do YYYY, h:mm:ss a'),
+            "text": "Hackaburg ist echt ein riesen Spaß!",
             "from": {
                 "username": "josh",
             },
@@ -49,7 +50,7 @@ var sampleData = {
             "profile_picture": "...",
             "id": "33"
         },
-        "created_time": "1296531955",
+        "created_time": moment().format('MMMM Do YYYY, h:mm:ss a'),
         "images": {
             "low_resolution": {
                 "url": "http://distillery.s3.amazonaws.com/media/2011/01/31/32d364527512437a8a17ba308a7c83bb_6.jpg",
@@ -62,7 +63,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": "http://distillery.s3.amazonaws.com/media/2011/01/31/32d364527512437a8a17ba308a7c83bb_7.jpg",
+                "url": faker.image.cats(),
                 "width": 612,
                 "height": 612
             }
@@ -85,14 +86,14 @@ var sampleData = {
                 "height": 480
             },
             "standard_resolution": {
-                "url": "http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_101.mp4",
+                "url": faker.image.cats(),
                 "width": 640,
                 "height": 640
             }
           },
         "users_in_photo": null,
         "filter": "Vesper",
-        "tags": ['lolcat','catlol', 'maike_is_cute_af'],
+        "tags": ['Hackaburg2018','catlol', 'maike_is_cute_af'],
         "comments": {
             "count": 2
         },
@@ -104,7 +105,7 @@ var sampleData = {
         "user": {
             "username": "kevin",
         },
-        "created_time": "1279340983",
+        "created_time": moment().format('MMMM Do YYYY, h:mm:ss a'),
         "images": {
             "low_resolution": {
                 "url": "http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_6.jpg",
@@ -117,7 +118,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": "http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_7.jpg",
+                "url": faker.image.cats(),
                 "width": 612,
                 "height": 612
             }
@@ -134,15 +135,15 @@ var sampleData = {
         "type": "image",
         "users_in_photo": [],
         "filter": "Earlybird",
-        "tags": ["expobar"],
+        "tags": ["expobar", "Hackaburg2018", "thestruggleisreal"],
         "comments": {
             "count": 0
         },
         "caption": {
-            "created_time": "1296532028",
-            "text": "@mikeyk pulls a shot on our #Expobar 1",
+            "created_time": moment().format('MMMM Do YYYY, h:mm:ss a'),
+            "text": "Ich hab sooo hunger. Ich will mehr Pizza, aber mich nicht anstellen.",
             "from": {
-                "username": "josh",
+                "username": "SamyDecoder",
             },
             "id": "25663923"
         },
@@ -151,11 +152,11 @@ var sampleData = {
         },
         "link": "http://instagr.am/p/BUS3X/",
         "user": {
-            "username": "josh",
+            "username": "codingLover69",
             "profile_picture": "...",
             "id": "33"
         },
-        "created_time": "1296531955",
+        "created_time": moment().format('MMMM Do YYYY, h:mm:ss a'),
         "images": {
             "low_resolution": {
                 "url": "http://distillery.s3.amazonaws.com/media/2011/01/31/32d364527512437a8a17ba308a7c83bb_6.jpg",
@@ -168,7 +169,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": "http://distillery.s3.amazonaws.com/media/2011/01/31/32d364527512437a8a17ba308a7c83bb_7.jpg",
+                "url": faker.image.cats(),
                 "width": 612,
                 "height": 612
             }
@@ -191,14 +192,14 @@ var sampleData = {
                 "height": 480
             },
             "standard_resolution": {
-                "url": "http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_101.mp4",
+                "url": faker.image.cats(),
                 "width": 640,
                 "height": 640
             }
           },
         "users_in_photo": null,
         "filter": "Vesper",
-        "tags": ["scheiß"],
+        "tags": ["scheiß", "Hackaburg2018"],
         "comments": {
             "count": 2
         },
@@ -210,7 +211,7 @@ var sampleData = {
         "user": {
             "username": "kevin",
         },
-        "created_time": "1279340983",
+        "created_time": moment().format('MMMM Do YYYY, h:mm:ss a'),
         "images": {
             "low_resolution": {
                 "url": "http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_6.jpg",
@@ -223,7 +224,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": "http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_7.jpg",
+                "url": faker.image.cats(),
                 "width": 612,
                 "height": 612
             }
@@ -240,15 +241,15 @@ var sampleData = {
         "type": "image",
         "users_in_photo": [],
         "filter": "Earlybird",
-        "tags": ["expobar"],
+        "tags": ["expobar", "Hackaburg2018"],
         "comments": {
             "count": 0
         },
         "caption": {
-            "created_time": "1296532028",
-            "text": "@mikeyk pulls a shot on our #Expobar 2",
+            "created_time": moment().format('MMMM Do YYYY, h:mm:ss a'),
+            "text": "Well.. let's give it a try. You never know, what will happen..",
             "from": {
-                "username": "josh",
+                "username": "SusanBob",
             },
             "id": "25663923"
         },
@@ -261,7 +262,7 @@ var sampleData = {
             "profile_picture": "...",
             "id": "33"
         },
-        "created_time": "1296531955",
+        "created_time": moment().format('MMMM Do YYYY, h:mm:ss a'),
         "images": {
             "low_resolution": {
                 "url": "http://distillery.s3.amazonaws.com/media/2011/01/31/32d364527512437a8a17ba308a7c83bb_6.jpg",
@@ -274,7 +275,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": "http://distillery.s3.amazonaws.com/media/2011/01/31/32d364527512437a8a17ba308a7c83bb_7.jpg",
+                "url": faker.image.cats(),
                 "width": 612,
                 "height": 612
             }
@@ -297,14 +298,14 @@ var sampleData = {
                 "height": 480
             },
             "standard_resolution": {
-                "url": "http://distilleryvesper9-13.ak.instagram.com/090d06dad9cd11e2aa0912313817975d_101.mp4",
+                "url": faker.image.cats(),
                 "width": 640,
                 "height": 640
             }
           },
         "users_in_photo": null,
         "filter": "Vesper",
-        "tags": ["hans"],
+        "tags": ["hans", "Hackaburg2018"],
         "comments": {
             "count": 2
         },
@@ -316,7 +317,7 @@ var sampleData = {
         "user": {
             "username": "kevin",
         },
-        "created_time": "1279340983",
+        "created_time": moment().format('MMMM Do YYYY, h:mm:ss a'),
         "images": {
             "low_resolution": {
                 "url": "http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_6.jpg",
@@ -329,7 +330,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": "http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_7.jpg",
+                "url": faker.image.cats(),
                 "width": 612,
                 "height": 612
             }
@@ -346,15 +347,15 @@ var sampleData = {
         "type": "image",
         "users_in_photo": [],
         "filter": "Earlybird",
-        "tags": ["expobar"],
+        "tags": ["expobar", "Hackaburg2018"],
         "comments": {
             "count": 0
         },
         "caption": {
-            "created_time": "1296532028",
-            "text": "@mikeyk pulls a shot on our #Expobar 3",
+            "created_time": moment().format('MMMM Do YYYY, h:mm:ss a'),
+            "text": "I don't know any german word. Send help!",
             "from": {
-                "username": "josh",
+                "username": "KafkaLos",
             },
             "id": "25663923"
         },
@@ -367,7 +368,7 @@ var sampleData = {
             "profile_picture": "...",
             "id": "33"
         },
-        "created_time": "1296531955",
+        "created_time": moment().format('MMMM Do YYYY, h:mm:ss a'),
         "images": {
             "low_resolution": {
                 "url": "http://distillery.s3.amazonaws.com/media/2011/01/31/32d364527512437a8a17ba308a7c83bb_6.jpg",
@@ -380,7 +381,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": "http://distillery.s3.amazonaws.com/media/2011/01/31/32d364527512437a8a17ba308a7c83bb_7.jpg",
+                "url": faker.image.cats(),
                 "width": 612,
                 "height": 612
             }
@@ -410,7 +411,7 @@ var sampleData = {
           },
         "users_in_photo": null,
         "filter": "Vesper",
-        "tags": ["geilausgefüllt"],
+        "tags": ["somuchfunnn", "Hackaburg2018"],
         "comments": {
             "count": 2
         },
@@ -422,7 +423,7 @@ var sampleData = {
         "user": {
             "username": "kevin",
         },
-        "created_time": "1279340983",
+        "created_time": moment().format('MMMM Do YYYY, h:mm:ss a'),
         "images": {
             "low_resolution": {
                 "url": "http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_6.jpg",
@@ -435,7 +436,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": "http://distilleryimage2.ak.instagram.com/11f75f1cd9cc11e2a0fd22000aa8039a_7.jpg",
+                "url": faker.image.cats(),
                 "width": 612,
                 "height": 612
             }

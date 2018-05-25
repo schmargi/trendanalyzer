@@ -1,22 +1,22 @@
+var moment = require("moment");
+
+
   var sampleData = {
           "statuses": [
                   {
-                          "created_at": "Sun Feb 25 18:11:01 +0000 2018",
+                          "created_at": moment().format('MMMM Do YYYY, h:mm:ss a'),
                           "id": 967824267948773377,
                           "id_str": "967824267948773377",
-                          "text": "From pilot to astronaut, Robert H. Lawrence was the first African-American to be selected as an astronaut by any na… https://t.co/FjPEWnh804",
+                          "text": "Jede Menge coole Projekte auf der Hackaburg!",
                           "truncated": true,
                           "entities": {
                                   "hashtags": [
                                           {
-                                                  "text": "maikeistgeil",
+                                                  "text": "Hackaburg2018",
                                                   "indices": [
                                                           19,
                                                           28
                                                   ]
-                                          },
-                                          {
-                                                  "text": "tags"
                                           }
                                   ],
                                   "symbols": [],
@@ -45,8 +45,8 @@
                           "user": {
                                   "id": 11348282,
                                   "id_str": "11348282",
-                                  "name": "NASA",
-                                  "screen_name": "NASA",
+                                  "name": "JuanMartin123",
+                                  "screen_name": "JuanMartin123",
                                   "location": "",
                                   "description": "Explore the universe and discover our home planet with @NASA. We usually post in EST (UTC-5)",
                                   "url": "https://t.co/TcEE6NS8nD",
@@ -147,15 +147,15 @@
                           "lang": "en"
                   },
                   {
-                          "created_at": "Sun Feb 25 19:31:07 +0000 2018",
+                          "created_at": moment().format('MMMM Do YYYY, h:mm:ss a'),
                           "id": 967844427480911872,
                           "id_str": "967844427480911872",
-                          "text": "A magnetic power struggle of galactic proportions - new research highlights the role of the Sun's magnetic landscap… https://t.co/29dZgga54m",
+                          "text": "Dieses Jahr zum 1.Mal auf der Hackaburg. Voll gespannt, was hier so passiert! :)",
                           "truncated": true,
                           "entities": {
                                   "hashtags": [
                                           {
-                                                  "text": "yeahboy",
+                                                  "text": "Hackaburg2018",
                                                   "indices": [
                                                           19,
                                                           28
@@ -188,8 +188,8 @@
                           "user": {
                                   "id": 11348282,
                                   "id_str": "11348282",
-                                  "name": "NASA",
-                                  "screen_name": "NASA",
+                                  "name": "LadiesKiller",
+                                  "screen_name": "LadiesKiller",
                                   "location": "",
                                   "description": "Explore the universe and discover our home planet with @NASA. We usually post in EST (UTC-5)",
                                   "url": "https://t.co/TcEE6NS8nD",
@@ -290,15 +290,15 @@
                           "lang": "en"
                   },
                   {
-                          "created_at": "Mon Feb 26 19:21:43 +0000 2018",
+                          "created_at": moment().format('MMMM Do YYYY, h:mm:ss a'),
                           "id": 968204446625869827,
                           "id_str": "968204446625869827",
-                          "text": "Someone's got to be first. In space, the first explorers beyond Mars were Pioneers 10 and 11, twin robots who chart… https://t.co/SUX30Y45mr",
+                          "text": "Wann gibts essen?",
                           "truncated": true,
                           "entities": {
                                   "hashtags": [
                                           {
-                                                  "text": "yeahbuddy",
+                                                  "text": "Hackaburg2018",
                                                   "indices": [
                                                           19,
                                                           28
@@ -433,15 +433,15 @@
                           "lang": "en"
                   },
                   {
-                          "created_at": "Mon Feb 26 06:42:50 +0000 2018",
+                          "created_at": moment().format('MMMM Do YYYY, h:mm:ss a'),
                           "id": 968013469743288321,
                           "id_str": "968013469743288321",
-                          "text": "宇宙ステーションでも、日本と9時間の時差で月曜日が始まりました。n今週は6人から3人にクルーのサイズダウンがありますが、しっかりと任されているタスクをこなしたいと思います。nn写真は、NASAの実験施設「ディスティニー」のグローブ… https://t.co/2CYoPV6Aqx",
+                          "text": "Suche noch ein Team, das Lust hätte was in die Richtung Blockchain und Tinder zu machen! Schreib mir ne mail. malik.heisser@web.de",
                           "truncated": true,
                           "entities": {
                                   "hashtags": [
                                           {
-                                                  "text": "siesprichtnichtmehr",
+                                                  "text": "Hackaburg2018",
                                                   "indices": [
                                                           19,
                                                           28
@@ -576,15 +576,15 @@
                           "lang": "ja"
                   },
                   {
-                          "created_at": "Mon Feb 26 01:07:05 +0000 2018",
+                          "created_at": moment().format('MMMM Do YYYY, h:mm:ss a'),
                           "id": 967928974960545793,
                           "id_str": "967928974960545793",
-                          "text": "Congratulations to #Olympics athletes who won gold! Neutron stars like the one at the heart of the Crab Nebula may… https://t.co/vz4SnPupe2",
+                          "text": "WARUM IST HIER KEINER MEHR? Schlafen schon alle ..?",
                           "truncated": true,
                           "entities": {
                                   "hashtags": [
                                           {
-                                                  "text": "Olympics",
+                                                  "text": "Hackaburg2018",
                                                   "indices": [
                                                           19,
                                                           28
@@ -719,15 +719,15 @@
                           "lang": "en"
                   },
                   {
-                          "created_at": "Mon Feb 26 01:07:05 +0000 2018",
+                          "created_at": moment().format('MMMM Do YYYY, h:mm:ss a'),
                           "id": 96792897496053434345793,
                           "id_str": "96792897496053434345793",
-                          "text": "Maike ist so bös to #Olympics athletes who won gold! Neutron stars like the one at the heart of the Crab Nebula may… https://t.co/vz4SnPupe2",
+                          "text": "Wow, noch nie so viele Challenges wie dieses Jahr! Hoffentlich gewinn ich richtig fett Kohle!!",
                           "truncated": true,
                           "entities": {
                                   "hashtags": [
                                           {
-                                                  "text": "Olympics",
+                                                  "text": "Hackaburg2018",
                                                   "indices": [
                                                           19,
                                                           28
@@ -862,15 +862,15 @@
                           "lang": "en"
                   },
                   {
-                        "created_at": "Mon Feb 26 01:07:05 +0000 2018",
+                        "created_at": moment().format('MMMM Do YYYY, h:mm:ss a'),
                         "id": 74960545793,
                         "id_str": "74960545793",
-                        "text": "Congratulations to #Olympics athletes who won gold! Neutron stars like the one at the heart of the Crab Nebula may… https://t.co/vz4SnPupe2",
+                        "text": "Ob ich hier bin um Spaß zu haben? Nö, mich interessiert nur die Kohle!",
                         "truncated": true,
                         "entities": {
                                 "hashtags": [
                                         {
-                                                "text": "Olympics",
+                                                "text": "Hackaburg2018",
                                                 "indices": [
                                                         19,
                                                         28
