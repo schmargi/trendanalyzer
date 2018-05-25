@@ -2,5 +2,5 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   name:             DS.attr('string'),
-  follower_count:   DS.attr('number'),
+  followers_count:   DS.attr('number'),
 });
