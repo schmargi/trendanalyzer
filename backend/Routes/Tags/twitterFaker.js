@@ -1,10 +1,43 @@
+var faker = require("faker");
 var moment = require("moment");
+
+faker.locale = "de";
+
+var fake = function() {
+  return {
+    "text": faker.random.words(8),
+
+    "type": "image",
+    "entities": {
+      "hashtags": [
+        {
+          "text": faker.random.word()
+        },
+        {
+          "text": faker.random.word()
+        }
+      ],
+      "urls": [
+        {
+          "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+        }
+      ]
+    },
+    "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+    "user": {
+      "name": faker.internet.userName(),
+      "followers_count": faker.random.number({min: 0, max: 80000000}),
+    },
+    "favorite_count": faker.random.number({min: 0, max: 8000000}),
+    "retweet_count": faker.random.number({min:0, max: 100000})
+  };
+};
 
 
   var sampleData = {
           "statuses": [
                   {
-                          "created_at": moment().format('MMMM Do YYYY, h:mm:ss a'),
+                          "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
                           "id": 967824267948773377,
                           "id_str": "967824267948773377",
                           "text": "Jede Menge coole Projekte auf der Hackaburg!",
@@ -147,7 +180,7 @@ var moment = require("moment");
                           "lang": "en"
                   },
                   {
-                          "created_at": moment().format('MMMM Do YYYY, h:mm:ss a'),
+                          "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
                           "id": 967844427480911872,
                           "id_str": "967844427480911872",
                           "text": "Dieses Jahr zum 1.Mal auf der Hackaburg. Voll gespannt, was hier so passiert! :)",
@@ -290,7 +323,7 @@ var moment = require("moment");
                           "lang": "en"
                   },
                   {
-                          "created_at": moment().format('MMMM Do YYYY, h:mm:ss a'),
+                          "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
                           "id": 968204446625869827,
                           "id_str": "968204446625869827",
                           "text": "Wann gibts essen?",
@@ -433,7 +466,7 @@ var moment = require("moment");
                           "lang": "en"
                   },
                   {
-                          "created_at": moment().format('MMMM Do YYYY, h:mm:ss a'),
+                          "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
                           "id": 968013469743288321,
                           "id_str": "968013469743288321",
                           "text": "Suche noch ein Team, das Lust hätte was in die Richtung Blockchain und Tinder zu machen! Schreib mir ne mail. malik.heisser@web.de",
@@ -576,7 +609,7 @@ var moment = require("moment");
                           "lang": "ja"
                   },
                   {
-                          "created_at": moment().format('MMMM Do YYYY, h:mm:ss a'),
+                          "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
                           "id": 967928974960545793,
                           "id_str": "967928974960545793",
                           "text": "WARUM IST HIER KEINER MEHR? Schlafen schon alle ..?",
@@ -719,7 +752,7 @@ var moment = require("moment");
                           "lang": "en"
                   },
                   {
-                          "created_at": moment().format('MMMM Do YYYY, h:mm:ss a'),
+                          "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
                           "id": 96792897496053434345793,
                           "id_str": "96792897496053434345793",
                           "text": "Wow, noch nie so viele Challenges wie dieses Jahr! Hoffentlich gewinn ich richtig fett Kohle!!",
@@ -862,7 +895,7 @@ var moment = require("moment");
                           "lang": "en"
                   },
                   {
-                        "created_at": moment().format('MMMM Do YYYY, h:mm:ss a'),
+                        "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
                         "id": 74960545793,
                         "id_str": "74960545793",
                         "text": "Ob ich hier bin um Spaß zu haben? Nö, mich interessiert nur die Kohle!",
@@ -1019,5 +1052,6 @@ var moment = require("moment");
   }
 
   module.exports = {
-    sampleData:sampleData
+    sampleData:sampleData,
+    fake: fake
   }
