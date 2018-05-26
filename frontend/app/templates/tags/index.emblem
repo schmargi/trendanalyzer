@@ -22,7 +22,7 @@ table.table
           = tag.title
       td
         p
-          = tag.postCount
+          = tag.post_count
       td
         = if tag.hasTwitter
           span
@@ -33,10 +33,10 @@ table.table
             = fa-icon 'instagram'
       td
         p
-          = tag.likeCountSum
+          = tag.like_count
       td
         p
-          = tag.retweetCountSum
+          = tag.retweet_count
 
   / = each tag.posts as |post|
   /   h5 = post.text
