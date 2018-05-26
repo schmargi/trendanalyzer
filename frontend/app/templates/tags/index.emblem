@@ -1,4 +1,4 @@
-h1 Meine tollen Trends
+img.logo alt="Brand" src="%PUBLIC_URL%/../../assets/logo.png"
 
 table.table
   thead
@@ -19,18 +19,31 @@ table.table
         h5
           = link-to 'tags.tag' tag.id
             |#
-          = tag.title
+            = tag.title
       td
         p
           = tag.post_count
       td
-        = if tag.contains_twitter
+        = if (and tag.contains_twitter tag.contains_instagram)
           span
             = fa-icon 'twitter'
             |&nbsp;&nbsp;
-        = if tag.contains_instagram
           span
             = fa-icon 'instagram'
+  
+        = else 
+          = if tag.contains_twitter
+            span
+              = fa-icon 'twitter'
+              |&nbsp;&nbsp;
+            span.inactive
+              = fa-icon 'instagram'
+          = if tag.contains_instagram
+            span.inactive
+              = fa-icon 'twitter'
+              |&nbsp;&nbsp;
+            span
+              = fa-icon 'instagram'
       td
         p
           = tag.like_count
