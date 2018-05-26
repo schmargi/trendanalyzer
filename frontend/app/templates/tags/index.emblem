@@ -20,7 +20,7 @@ table.table
       th scope="col"  Platform
       th scope="col"  Total Like Count
       th scope="col"  Retweet Count
- 	  th scope="col"  Popularity Score
+      th scope="col"  Popularity Score
   tbody
 
 
