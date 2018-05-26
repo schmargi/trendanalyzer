@@ -7,7 +7,7 @@ module.exports = class Tag {
     this.popularity = score;
     this.post_count = post_count;
     this.retweet_count = retweet_count;
-    this.like_count = retweet_count;
+    this.like_count = like_count;
     this.contains_twitter = contains_twitter;
     this.contains_instagram = contains_instagram;
   }
