@@ -19,7 +19,7 @@ router.get('/', function (req, res) {
     instagramPosts.push(instagramFaker.fake());
   }
 
-  instagramPosts.map( item => {
+  instagramPosts = instagramPosts.map( item => {
 
     tags.push(...item.tags);
     //nullable values
