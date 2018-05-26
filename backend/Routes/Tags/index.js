@@ -54,20 +54,31 @@ router.get('/', function (req, res) {
   }
 
   var fittingTags = tags.map(tag => {
+    var score = 0;
+    console.log(score);
     var fittingPosts = posts.filter(post => {
       return post.tags.includes(tag) && post.city == location
     });
-    return new Tag(tag, false, fittingPosts);
+    score += fittingPosts.length;
+    fittingPosts.forEach(post => {
+      score = score + post.like_count * 0.01;
+      score = score + post.retweet_count * 0.5;
+    });
+
+
+    console.log(score);
+    return new Tag(tag, false, fittingPosts, score);
   }).filter(tag => tag.posts.length > 0)
     .sort(function(lhs, rhs) {
-      if (lhs.posts.length > rhs.posts.length) {
+      if (lhs.score > rhs.score) {
         return -1;
       }
-      if (lhs.posts.length < rhs.posts.length) {
+      if (lhs.score < rhs.score) {
         return +1;
       }
       return 0;
   });
+
   res.status(200).send({tags: fittingTags});
 });
 
