@@ -8,7 +8,7 @@
           = link-to "tags" class="nav-link"
             |&nbsp;&nbsp;Overview
       
-      ul.navbar-nav.mr-auto
+      ul.navbar-nav.ml-auto
         = link-to "about" tagName='li' class="nav-item"
           = link-to "about" class="nav-link"
             |&nbsp;&nbsp;About

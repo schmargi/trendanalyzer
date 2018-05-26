@@ -39,6 +39,11 @@ export default DS.Model.extend({
   contains_twitter:   DS.attr('boolean'),
   contains_instagram: DS.attr('boolean'),
 
+  searchQuery:                  computed('title','origin', function(){
+    const { title, origin} = this.getProperties(['title','origin']);
+    return `${origin} ${title} ${origin}`;
+  }),
+
 
   data_post_count:  computed('post_count', function(){
     return [

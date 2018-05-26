@@ -1,103 +1,16 @@
 img.logo alt="Brand" src="%PUBLIC_URL%/../../assets/logo.png"
-.btn-group
+.btn-group.float-right.mt3
   button#location.btn.btn-secondary.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button"
-    |Location
+    |Regensburg
   .dropdown-menu
     a.dropdown-item click="'locationSelection' 'Location'" Location
     .dropdown-divider
     a.dropdown-item click="'locationSelection' 'Regensburg'" Regensburg
     a.dropdown-item click="'locationSelection' 'München'" München
 
+.input-group.mb-3
+  .input-group-prepend
+    span#basic-addon1.input-group-text #
+  = input class="form-control" aria-describedby="basic-addon1" type="text" id="query" value=query placeholder="search for hashtags"
 
-
-
-table.table
-  thead
-    tr
-      th scope="col"  #
-      th scope="col"  Tag
-      th scope="col"  Total Post Count
-      th scope="col"  Platform
-      th scope="col"  Total Like Count
-      th scope="col"  Retweet Count
-      th scope="col"  Popularity Score
-  tbody
-
-
-
-  = each model as |tag index|
-    tr
-      th scope="row"
-         inc index
-      td
-        h5
-          = link-to 'tags.tag' tag.id
-            |#
-            = tag.title
-      td
-        p
-          = tag.post_count
-      td
-        = if (and tag.contains_twitter tag.contains_instagram)
-          span
-            = fa-icon 'twitter'
-            |&nbsp;&nbsp;
-          span
-            = fa-icon 'instagram'
-
-        = else
-          = if tag.contains_twitter
-            span
-              = fa-icon 'twitter'
-              |&nbsp;&nbsp;
-            span.inactive
-              = fa-icon 'instagram'
-          = if tag.contains_instagram
-            span.inactive
-              = fa-icon 'twitter'
-              |&nbsp;&nbsp;
-            span
-              = fa-icon 'instagram'
-      td
-        p
-          = tag.like_count
-      td
-        p
-          = tag.retweet_count
-      td
-        p
-          = tag.popularity
-
-  / = each tag.posts as |post|
-  /   h5 = post.text
-  /   p
-  /     |von &nbsp;
-  /     = post.user_name
-  /     | &nbsp; in &nbsp;
-  /     = post.city
-  /   p
-  /     = fa-icon 'thumbs-up'
-  /     |&nbsp;
-  /     = post.like_count
-  /
-  /   = if post.isTwitter
-  /     p
-  /       = fa-icon 'twitter'
-  /       |&nbsp;
-  /       = post.origin
-  /
-  /   = else
-  /     p
-  /       = fa-icon 'instagram'
-  /       |&nbsp;
-  /       = post.origin
-  /
-  /
-  /   = if post.isImage
-  /     h1
-  /       = post.media_type
-  /     img alt="Brand" src=post.media_url
-  /   = if post.isVideo
-  /     h1
-  /       = post.media_type
-  /     video alt="Brand" src=post.media_url
+= filterable-tags model=filteredTags
