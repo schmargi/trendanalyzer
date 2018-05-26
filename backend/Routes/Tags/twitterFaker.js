@@ -4,6 +4,7 @@ var moment = require("moment");
 faker.locale = "de";
 
 var fake = function() {
+  var tagWord = faker.random.word().replace(/\s/g,'');
   return {
     "text": faker.random.words(8),
 
@@ -11,10 +12,10 @@ var fake = function() {
     "entities": {
       "hashtags": [
         {
-          "text": faker.random.word()
+          "text": tagWord
         },
         {
-          "text": faker.random.word()
+          "text": tagWord
         }
       ],
       "urls": [
@@ -29,10 +30,10 @@ var fake = function() {
     "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
     "user": {
       "name": faker.internet.userName(),
-      "followers_count": faker.random.number({min: 0, max: 80000000}),
+      "followers_count": faker.random.number({min: 0, max: 300}),
     },
-    "favorite_count": faker.random.number({min: 0, max: 8000000}),
-    "retweet_count": faker.random.number({min:0, max: 100000})
+    "favorite_count": faker.random.number({min: 0, max: 50}),
+    "retweet_count": faker.random.number({min:0, max: 20})
   };
 };
 
@@ -59,7 +60,7 @@ var fake = function() {
               "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
               "user": {
                 "name": faker.internet.userName(),
-                "followers_count": faker.random.number({min: 0, max: 100}),
+                "followers_count": faker.random.number({min: 0, max: 300}),
               },
               "favorite_count": 203,
               "retweet_count": 17
@@ -147,10 +148,10 @@ var fake = function() {
               "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
               "user": {
                 "name": faker.internet.userName(),
-                "followers_count": faker.random.number({min: 0, max: 100}),
+                "followers_count": faker.random.number({min: 0, max: 300}),
               },
-              "favorite_count": 19,
-              "retweet_count": 1
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
             },
             {
               "text": "Technik hin oder her, analog ist irgendwie doch besser! #MZ #mittelbayerische",
@@ -175,11 +176,443 @@ var fake = function() {
               "created_at": moment().subtract(faker.random.number({min: 0, max: 3000}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
               "user": {
                 "name": faker.internet.userName(),
-                "followers_count": faker.random.number({min: 0, max: 500}),
+                "followers_count": faker.random.number({min: 0, max: 300}),
               },
-              "favorite_count": 350,
-              "retweet_count": 20
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
             },
+            {
+              "text": "Hackaburg ist soo geil bis jetzt! Bin total begeistert! #Hackaburg2018",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Hackaburg2018"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "LollipopGirls",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Wann gibts endlich wieder essen? Bin am verhungern! #Hackaburg2018",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Hackaburg2018"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "LollipopGirls",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "So viele hübsche Mädchen auf der #Hackaburg2018. Hoffentlich trau ich mich eine anzusprechen ich bin so schüchtern.",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Hackaburg2018"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "ShyGuy30",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "I like clean code and I can not lie. #Hackaburg2018",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Hackaburg2018"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "HackerGuyzAreMyStylz",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "i love #Hackaburg2018",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Hackaburg2018"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "CodingIsForLovers",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Hätte eine nette w Lust sich ein bisschen über Code zu unterhalten? Bin draußen und der mit dem Cap.. #Hackaburg2018",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Hackaburg2018"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "KevinMcKevKev",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "To sleep or not to sleep. That is the question. #Hackaburg2018",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Hackaburg2018"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "SleeplessInOhio",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Gibts hier Mobile Devs, die sich RICHTIG gut mit xCode auskennen und mir kurz helfen könnten? #sendhelp #Hackaburg2018",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Hackaburg2018"
+                  },
+                  {
+                    "text": "sendhelp"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "LollipopGirls",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Hätte ein netter m Lust auf einen Drink an der Cocktail-Bar? Bin w 19, klein und mag ember. #Hackaburg2018 #HackaburgVerkuppelt",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Hackaburg2018"
+                  },
+                  {
+                    "text": "HackaburgVerkuppelt"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "CodingGirl",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "He's the reason for the bugs in my code. Broken Heart codes badly. #Hackaburg2018",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Hackaburg2018"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "StevieLovessYourSchnitzel",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Drew looks at me, I fake a smile so he won't see... mit nix coded es sich besser als mit Taylor Swift! Love her so much! #Hackaburg2018",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Hackaburg2018"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "TaylorSwift",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "I love the players and you love the game - #Hackaburg2018",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Hackaburg2018"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "NastyCars",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Mein rechter, rechter Platz ist leer, ich wünsch mir einen netten m her. #Hackaburg2018",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Hackaburg2018"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "ohNoScreamingCrying",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "I just wanna keep coding your class. Until you come back bugfree. #Hackaburg2018",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Hackaburg2018"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "Codingismylife",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "I don't wanna code for ever. Cause I don't wanna be living in bugs. #Hackaburg2018",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Hackaburg2018"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "KermitGirlzAreSexy",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Ich möchte gerne wissen wer von euch black metal mag? Vllt ne nette w? #Hackaburg2018",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Hackaburg2018"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "HopefulGuy",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Wenn die Wurst einfach viel zu groß ist. #Hackaburg2018",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Hackaburg2018"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "HackfleischHassenderZerhacker",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+
           ],
           "search_metadata": {
                   "completed_in": 0.057,
