@@ -40,7 +40,7 @@ router.use(bodyParser.json());
 
     var location = "";
     if (item.location == undefined) {
-      location = "Regensburg"
+      location = "Instagram"
     } else {
       location = item.location.name;
 
@@ -70,9 +70,6 @@ router.use(bodyParser.json());
 
 router.get('/', function (req, res) {
   var location = req.query.location;
-  if (location == undefined) {
-    location = "Regensburg";
-  }
   var sortBy = req.query.sort_by;
   if (sortBy == undefined) {
     sortBy = "post_count"
@@ -85,9 +82,8 @@ router.get('/', function (req, res) {
 
 router.get('/:id', function(req, res) {
   var location = req.query.location;
-  if (location == undefined) {
-    location = "Regensburg";
-  }
+
+
   var sortBy = req.query.sort_by;
   if (sortBy == undefined) {
     sortBy = "post_count"
@@ -123,7 +119,7 @@ var postsForTags = function(tags, location, sortBy) {
     var two_before_presterday_post_count = 0;
 
     var fittingPosts = posts.filter(post => {
-      return post.tags.includes(tag.name) && post.city == location
+      return post.tags.includes(tag.name) && (location == undefined || post.city == location)
     });
     score += fittingPosts.length;
     fittingPosts.forEach(post => {
