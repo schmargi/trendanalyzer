@@ -1,26 +1,42 @@
 h1 Meine tollen Trends
 
-= each model as |tag|
-  h5
-    = link-to 'tag' tag.title
-      |#
-      = tag.title
-  p
-    |Posts:&nbsp;
-    = tag.postCount
+table.table
+  thead
+    tr
+      th scope="col"  #
+      th scope="col"  Tag
+      th scope="col"  Total Post Count
+      th scope="col"  Twitter / Instagram
+      th scope="col"  total like Count
+      th scope="col"  retweet count
+  tbody
 
-  = if tag.hasTwitter
-    p
-      = fa-icon 'twitter'
-  = if tag.hasInstagram
-    p
-      = fa-icon 'instagram'
-
-  p
-    = tag.likeCountSum
-
-  p
-    = tag.retweetCountSum
+  = each model as |tag index|
+    tr
+      th scope="row"
+         inc index
+      td
+        h5
+          = link-to 'tag' tag.title
+            |#
+          = tag.title
+      td
+        p
+          = tag.postCount
+      td
+        = if tag.hasTwitter
+          span
+            = fa-icon 'twitter'
+            |&nbsp;&nbsp;
+        = if tag.hasInstagram
+          span
+            = fa-icon 'instagram'
+      td
+        p
+          = tag.likeCountSum
+      td
+        p
+          = tag.retweetCountSum
 
   / = each tag.posts as |post|
   /   h5 = post.text
