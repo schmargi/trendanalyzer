@@ -6,9 +6,11 @@ h1 hallo
     = tag.title
   = each tag.posts as |post|
     h5 = post.text
-    p = post.mediafile.type
-    p = post.city
-    p = post.retweet_count
+    p
+      |von &nbsp;
+      = post.user_name
+      | &nbsp; in &nbsp;
+      = post.city
     p
       = fa-icon 'thumbs-up'
       |&nbsp;

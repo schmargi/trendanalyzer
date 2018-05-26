@@ -3,7 +3,7 @@ import DS from 'ember-data';
 
 export default ApplicationSerializer.extend(DS.EmbeddedRecordsMixin, {
   primaryKey: 'url',
-  // attrs: {
-  //   mediafiles: { embedded: 'always' }
-  // }
+  attrs: {
+    mediafiles: { embedded: 'always' }
+  }
 });

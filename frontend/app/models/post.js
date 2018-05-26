@@ -11,8 +11,10 @@ export default DS.Model.extend({
   city:             DS.attr('string'),
   like_count:       DS.attr('number'),
   retweet_count:    DS.attr('number'),
-  user:             DS.belongsTo('user', {async: true}),
-  mediafiles:       DS.hasMany('mediafile', {async: true}),
+  user_name:        DS.attr('string'),
+  user_follower_count: DS.attr('number'),
+  media_type:       DS.attr('string'),
+  media_url:        DS.attr('string'),
 
   isTwitter:        Ember.computed('origin', function(){
     return this.get('origin') == 'TWITTER';
