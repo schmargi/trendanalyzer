@@ -1352,7 +1352,7 @@ var fake = function() {
                 ]
               },
               "place": {
-                "name": "Regensburg"
+                "name": "München"
               },
               "created_at": moment().subtract(faker.random.number({min: 0, max: 7200}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
               "user": {
@@ -1362,6 +1362,257 @@ var fake = function() {
               "favorite_count": faker.random.number({min: 0, max: 50}),
               "retweet_count": faker.random.number({min: 0, max: 20})
             },
+            {
+              "text": "Wenn ich ein weißes Lama hätte wäre mein Leben sowas von perfekt! #LamasInPyjamas",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "LamasInPyjamas"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "München"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 7200}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "LooneyTunes",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Wenn ich ein weißes Lama hätte wäre mein Leben sowas von perfekt! #LamasInPyjamas",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "LamasInPyjamas"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "München"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 7200}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "Salmon",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Lamas sind viel besser als Alpakas! #LamasInPyjamas",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "LamasInPyjamas"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "München"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 7200}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "SimoneMiller",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Lamas sind wirklich die schöneren Hunde! #LamasInPyjamas",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "LamasInPyjamas"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "München"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 7200}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "FreakyLilSmith",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Wenn ich ein weißes Lama hätte wäre mein Leben sowas von perfekt! #LamasInPyjamas",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "LamasInPyjamas"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "München"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 7200}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "LooneyTunes",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Grund #1012 warum ich Lamas liebe. Sie sind so flaauschig! #LamasInPyjamas",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "LamasInPyjamas"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "München"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 7200}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "FlauschiLover",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Grund Nummer2 für meinen Lama-Fanatismus!? Sie sind Paarhufer! #LamasInPyjamas",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "LamasInPyjamas"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "München"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 7200}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "FloMocksApps",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Lamas+Cheesburger = Leeseburgers <3 #LamasInPyjamas",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "LamasInPyjamas"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "München"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 7200}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "LarsUlrich",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Its all about big buts and lamas. #LamasInPyjamas",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "LamasInPyjamas"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "München"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 7200}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "smwWaldo",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Master of Lamas are pulling the strings.. twisting your mind, smashing your dreams. #LamasInPyjamas",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "LamasInPyjamas"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "München"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 7200}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "SandraHuber",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+
 
 
           ],

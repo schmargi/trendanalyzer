@@ -2022,7 +2022,44 @@ var sampleData = {
         "latitude": 37.780885099999999,
         "id": "222175378",
         "longitude": -122.3948632,
-        "name": "Regensburg"
+        "name": "München"
+    }
+},
+{
+    "type": "image",
+    "tags": ["LamasInPyjamas"],
+    "caption": {
+        "created_time": moment().subtract(faker.random.number({min: 0, max: 7200}), 'minutes').unix(),
+        "text":  "Mein liebstes Lama Sandy #LamasInPyjamas",
+        "from": {
+            "username": "LANADelLama",
+        },
+        "id": "25663923"
+    },
+    "likes": {
+        "count": faker.random.number({min: 0, max: 50})
+    },
+    "link": faker.internet.url()+'/'+faker.random.number(1000000),
+    "user": {
+        "username": "LANADelLama",
+        "profile_picture": "...",
+        "id": "33"
+    },
+    "created_time": moment().subtract(faker.random.number({min: 0, max: 7200}), 'minutes').unix(),
+    "images": {
+        "standard_resolution": {
+            "url": "https://www.publicdomainpictures.net/pictures/60000/velka/portrait-dun-lama.jpg",
+            "width": 612,
+            "height": 612
+        }
+    },
+    "user_has_liked": false,
+    "id": "22097367",
+    "location": {
+        "latitude": 37.780885099999999,
+        "id": "222175378",
+        "longitude": -122.3948632,
+        "name": "München"
     }
 }
 
