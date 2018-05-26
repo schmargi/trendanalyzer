@@ -10,7 +10,7 @@ var Tag = require('./tag');
 router.use(bodyParser.json());
 
   var tags = [];
-
+  var posts = [];
 
   var instagramPosts = instagramFaker.sampleData.data;
 
@@ -44,20 +44,25 @@ router.use(bodyParser.json());
   });
 
   tags = _.uniq(tags);
-
-  tags = tags.map(tag => {
-    var fittingPosts = [];
-    fittingPosts.push(...twitterPosts);
-    fittingPosts.push(...instagramPosts);
-    fittingPosts = fittingPosts.filter(post => {
-      return post.tags.includes(tag);
-    });
-    return new Tag(tag, false, fittingPosts);
-  });
+  posts.push(...twitterPosts);
+  posts.push(...instagramPosts);
 
 router.get('/', function (req, res) {
+  var location = req.query.location;
+  if (location == undefined) {
+    location = "Regensburg";
+  }
 
-  res.status(200).send({tags: tags});
+  var fittingTags = tags.map(tag => {
+    var fittingPosts = posts.filter(post => {
+      return post.tags.includes(tag) && post.city == location
+    });
+    return new Tag(tag, false, fittingPosts);
+  }).filter(tag => tag.posts.length > 0)
+    .sort(function(lhs, rhs) {
+      return rhs.posts.length - lhs.posts.length;
+  });
+  res.status(200).send({tags: fittingTags});
 });
 
 module.exports = router;
