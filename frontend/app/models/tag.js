@@ -5,27 +5,31 @@ export default DS.Model.extend({
   title:           DS.attr('string'),
   posts:           DS.hasMany('post', {async: true}),
 
-  postCount:      computed.readOnly('posts.length'),
+  // postCount:      computed.readOnly('posts.length'),
   is_favorite:     DS.attr('boolean', { defaultValue: false }),
+  post_count:      DS.attr('number'),
+  retweet_count:   DS.attr('number'),
+  like_count:      DS.attr('number'),
+  popularity:      DS.attr('number'),
 
-  likeCountSum:   computed('posts.like_count', function(){
-    let posts = this.get('posts').mapBy('like_count');
-    var sum = 0;
-    console.log(posts);
-    for (var i = 0; i < posts.length; i++) {
-      sum += posts[i]
-    }
-    return sum;
-  }),
-
-  retweetCountSum:   computed('posts.retweet_count', function(){
-    let posts = this.get('posts').mapBy('retweet_count');
-    var sum = 0;
-    for (var i = 0; i < posts.length; i++) {
-      sum += posts[i]
-    }
-    return sum;
-  }),
+  // likeCountSum:   computed('posts.like_count', function(){
+  //   let posts = this.get('posts').mapBy('like_count');
+  //   var sum = 0;
+  //   console.log(posts);
+  //   for (var i = 0; i < posts.length; i++) {
+  //     sum += posts[i]
+  //   }
+  //   return sum;
+  // }),
+  //
+  // retweetCountSum:   computed('posts.retweet_count', function(){
+  //   let posts = this.get('posts').mapBy('retweet_count');
+  //   var sum = 0;
+  //   for (var i = 0; i < posts.length; i++) {
+  //     sum += posts[i]
+  //   }
+  //   return sum;
+  // }),
 
   hasTwitter:     computed('posts.origin', function(){
     let posts = this.get('posts').mapBy('origin');
