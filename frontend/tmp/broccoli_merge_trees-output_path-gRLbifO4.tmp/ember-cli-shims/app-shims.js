@@ -1,1 +1,0 @@
-/Users/maike/dev/trendanalyzer/frontend/tmp/broccoli_merge_trees-input_base_path-52QVqNBi.tmp/0/ember-cli-shims/app-shims.js
