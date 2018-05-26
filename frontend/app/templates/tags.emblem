@@ -1,4 +1,20 @@
 h1 hallo
+button click='renderColumn' id="rendcolumn"
+  |Column chart
+button click='renderBar' id="rendbar"
+  |Bar chart
+button click='renderLine' id="rendline"
+  |Line chart
+button click='renderArea' id="rendarea"
+  |Area chart
+br
+
+form#chart-container
+  label Enter your own DataSource and click the button:
+  br
+  = textarea value=myds  rows="8" cols="99" placeholder="Enter the dataSource here without /* or // comments"
+  button click='renderChart' id="rend" Render Chart
+
 
 = each model as |tag|
   h1
