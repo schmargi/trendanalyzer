@@ -21,7 +21,7 @@ var fake = function() {
     },
     "created_time": moment().subtract(faker.random.number({min: 0, max: 60}, 'minutes')).unix(),
     "tags": [faker.random.word(), faker.random.word()],
-    "link": faker.internet.url()+'/'+faker.random.number(1000000)
+    "link": faker.internet.url()+'/'+faker.random.number(1000000),
   };
 };
 
@@ -45,7 +45,7 @@ var sampleData = {
         "likes": {
             "count": 35
         },
-        "link": "http://instagr.am/p/BUS3X/",
+        "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
             "username": "josh",
             "profile_picture": "...",
@@ -102,7 +102,7 @@ var sampleData = {
         "likes": {
             "count": 1
         },
-        "link": "http://instagr.am/p/D/",
+        "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
             "username": "kevin",
         },
@@ -151,7 +151,7 @@ var sampleData = {
         "likes": {
             "count": 35
         },
-        "link": "http://instagr.am/p/BUS3X/",
+        "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
             "username": "codingLover69",
             "profile_picture": "...",
@@ -208,7 +208,7 @@ var sampleData = {
         "likes": {
             "count": 1
         },
-        "link": "http://instagr.am/p/D/",
+        "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
             "username": "kevin",
         },
@@ -257,7 +257,7 @@ var sampleData = {
         "likes": {
             "count": 35
         },
-        "link": "http://instagr.am/p/BUS3X/",
+        "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
             "username": "josh",
             "profile_picture": "...",
@@ -314,7 +314,7 @@ var sampleData = {
         "likes": {
             "count": 1
         },
-        "link": "http://instagr.am/p/D/",
+        "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
             "username": "kevin",
         },
@@ -363,7 +363,7 @@ var sampleData = {
         "likes": {
             "count": 35
         },
-        "link": "http://instagr.am/p/BUS3X/",
+        "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
             "username": "josh",
             "profile_picture": "...",
@@ -420,7 +420,7 @@ var sampleData = {
         "likes": {
             "count": 1
         },
-        "link": "http://instagr.am/p/D/",
+        "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
             "username": "kevin",
         },
