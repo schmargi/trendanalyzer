@@ -27,3 +27,13 @@ h1 hallo
         = fa-icon 'instagram'
         |&nbsp;
         = post.origin
+
+
+    = if post.isImage
+      h1
+        = post.media_type
+      img alt="Brand" src=post.media_url
+    = if post.isVideo
+      h1
+        = post.media_type
+      video alt="Brand" src=post.media_url

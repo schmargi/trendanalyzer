@@ -19,4 +19,11 @@ export default DS.Model.extend({
   isTwitter:        Ember.computed('origin', function(){
     return this.get('origin') == 'TWITTER';
   }),
+
+  isImage:        Ember.computed('media_type', function(){
+    return this.get('media_type') == 'image';
+  }),
+  isVideo:        Ember.computed('media_type', function(){
+    return this.get('media_type') == 'video';
+  }),
 });
