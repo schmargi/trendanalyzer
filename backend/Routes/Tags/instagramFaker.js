@@ -20,7 +20,8 @@ var fake = function() {
       "text": faker.random.words(8)
     },
     "created_time": faker.random.number(1200000000),
-    "tags": [faker.random.word(), faker.random.word()]
+    "tags": [faker.random.word(), faker.random.word()],
+    "link": faker.internet.url()+'/'+faker.random.number(1000000)
   };
 };
 
