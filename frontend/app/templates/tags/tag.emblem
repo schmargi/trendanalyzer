@@ -2,7 +2,15 @@ h1
   |#
   = model.title
 
-= line-chart data=model.mydata options=model.myoptions
+  
+.container
+  .row.mt6.mb6
+    .col-lg-4
+      = line-chart data=model.data_post_count options=model.post_options
+    .col-lg-4
+      = line-chart data=model.data_like_count options=model.like_options
+    .col-lg-4
+      = line-chart data=model.data_retweet_count options=model.retweet_options
 
 / = each model.posts as |post|
 /   h5 = post.text
