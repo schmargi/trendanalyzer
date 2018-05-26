@@ -513,7 +513,7 @@ var sampleData = {
       },
       "caption": {
           "created_time": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').unix(),
-          "text": "Lest alle den interessanten Artikel auf Seite 3. Ich hab nur what the hack?! #MZ",
+          "text": "Lest alle den interessanten Artikel auf Seite 3. Ich hab nur gedacht what the hack?! #MZ",
           "from": {
               "username": "LuluStitch",
           },
@@ -1802,7 +1802,194 @@ var sampleData = {
         "longitude": -122.3948632,
         "name": "Regensburg"
     }
+},
+{
+    "type": "image",
+    "tags": ["MZ"],
+    "caption": {
+        "created_time": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').unix(),
+        "text":  "Bin im Druckermuseum. Ob die #MZ wohl auch so hergestellt wird..?",
+        "from": {
+            "username": "lockiSchnmocl",
+        },
+        "id": "25663923"
+    },
+    "likes": {
+        "count": faker.random.number({min: 0, max: 50})
+    },
+    "link": faker.internet.url()+'/'+faker.random.number(1000000),
+    "user": {
+        "username": "lockiSchnmocl",
+        "profile_picture": "...",
+        "id": "33"
+    },
+    "created_time": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').unix(),
+    "images": {
+        "standard_resolution": {
+            "url": "https://media.defense.gov/2009/May/08/2000578842/-1/-1/0/090504-F-0693C-003.JPG",
+            "width": 612,
+            "height": 612
+        }
+    },
+    "user_has_liked": false,
+    "id": "22097367",
+    "location": {
+        "latitude": 37.780885099999999,
+        "id": "222175378",
+        "longitude": -122.3948632,
+        "name": "Regensburg"
+    }
+},
+{
+    "type": "image",
+    "tags": ["MZ"],
+    "caption": {
+        "created_time": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').unix(),
+        "text":  "Für mich immmernoch die ehrlichste Zeitung! Mit Abstand! #MZ",
+        "from": {
+            "username": "Lurchsi",
+        },
+        "id": "25663923"
+    },
+    "likes": {
+        "count": faker.random.number({min: 0, max: 50})
+    },
+    "link": faker.internet.url()+'/'+faker.random.number(1000000),
+    "user": {
+        "username": "Lurchsi",
+        "profile_picture": "...",
+        "id": "33"
+    },
+    "created_time": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').unix(),
+    "images": {
+        "standard_resolution": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/1870_Portland_Transcript_newspaper_Maine_USA_Oct29.png",
+            "width": 612,
+            "height": 612
+        }
+    },
+    "user_has_liked": false,
+    "id": "22097367",
+    "location": {
+        "latitude": 37.780885099999999,
+        "id": "222175378",
+        "longitude": -122.3948632,
+        "name": "Regensburg"
+    }
+},
+{
+    "type": "image",
+    "tags": ["Maidult"],
+    "caption": {
+        "created_time": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').unix(),
+        "text":  "Steckerflisch ist das beste Essen auf der Welt. #Maidult",
+        "from": {
+            "username": "FishEater",
+        },
+        "id": "25663923"
+    },
+    "likes": {
+        "count": faker.random.number({min: 0, max: 50})
+    },
+    "link": faker.internet.url()+'/'+faker.random.number(1000000),
+    "user": {
+        "username": "Lurchsi",
+        "profile_picture": "...",
+        "id": "33"
+    },
+    "created_time": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').unix(),
+    "images": {
+        "standard_resolution": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Donauinselfest_2011%2C_Steckerlfisch_1.jpg",
+            "width": 612,
+            "height": 612
+        }
+    },
+    "user_has_liked": false,
+    "id": "22097367",
+    "location": {
+        "latitude": 37.780885099999999,
+        "id": "222175378",
+        "longitude": -122.3948632,
+        "name": "Regensburg"
+    }
+},
+{
+    "type": "image",
+    "tags": ["Maidult"],
+    "caption": {
+        "created_time": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').unix(),
+        "text":  "Ein, zwei Mass schaff ich noch. Dann muss ich mich eventuell dann doch übergeben. #Maidult",
+        "from": {
+            "username": "HansWurstMagsDick",
+        },
+        "id": "25663923"
+    },
+    "likes": {
+        "count": faker.random.number({min: 0, max: 50})
+    },
+    "link": faker.internet.url()+'/'+faker.random.number(1000000),
+    "user": {
+        "username": "Lurchsi",
+        "profile_picture": "...",
+        "id": "33"
+    },
+    "created_time": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').unix(),
+    "images": {
+        "standard_resolution": {
+            "url": "https://c1.staticflickr.com/9/8300/7982194710_facb610a97_b.jpg",
+            "width": 612,
+            "height": 612
+        }
+    },
+    "user_has_liked": false,
+    "id": "22097367",
+    "location": {
+        "latitude": 37.780885099999999,
+        "id": "222175378",
+        "longitude": -122.3948632,
+        "name": "Regensburg"
+    }
+},
+{
+    "type": "image",
+    "tags": ["Maidult"],
+    "caption": {
+        "created_time": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').unix(),
+        "text":  "Kann mir mal bitte jemand erklären, wieso die Schlange vor den Mädchen Toiletten SO unfassbar lang ist, aber bei den Männern keine Sau ansteht?! #Maidult",
+        "from": {
+            "username": "LinaGetsAngery",
+        },
+        "id": "25663923"
+    },
+    "likes": {
+        "count": faker.random.number({min: 0, max: 50})
+    },
+    "link": faker.internet.url()+'/'+faker.random.number(1000000),
+    "user": {
+        "username": "Lurchsi",
+        "profile_picture": "...",
+        "id": "33"
+    },
+    "created_time": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').unix(),
+    "images": {
+        "standard_resolution": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Promilla_Girl_Alkokontrolle_Oktoberfest_Dirndl.JPG",
+            "width": 612,
+            "height": 612
+        }
+    },
+    "user_has_liked": false,
+    "id": "22097367",
+    "location": {
+        "latitude": 37.780885099999999,
+        "id": "222175378",
+        "longitude": -122.3948632,
+        "name": "Regensburg"
+    }
 }
+
+
 
 
 
