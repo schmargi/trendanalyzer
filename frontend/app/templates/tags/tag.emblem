@@ -2,7 +2,7 @@ h1
   |#
   = model.title
 
-  
+
 .container
   .row.mt6.mb6
     .col-lg-4
@@ -19,7 +19,7 @@ h1
         .col-lg-4.col-md-3.col-sm-2.mb3
           .card
             img.card-img.card-img-top alt="Card image cap" src=post.media_url
-            .card-body  
+            .card-body
               = if post.isTwitter
                 p.badge.badge-primary.twitter
                   = fa-icon 'twitter'
@@ -31,7 +31,7 @@ h1
                   |&nbsp;&nbsp;
                   |Instagram
               br
-              h5  
+              h5
                 |#
                 = model.title
               p.card-text
@@ -44,8 +44,8 @@ h1
       = if post.isVideo
         .col-lg-4.col-md-3.col-sm-2.mb3
           .card
-            / video
-            .card-body  
+            video.card-mp4.card-mp4-top alt="Card image cap" src=post.media_url controls='play'
+            .card-body
               = if post.isTwitter
                 p.badge.badge-primary.twitter
                   = fa-icon 'twitter'
@@ -57,7 +57,7 @@ h1
                   |&nbsp;&nbsp;
                   |Instagram
               br
-              h5  
+              h5
                 |#
                 = model.title
               p.card-text
@@ -72,7 +72,7 @@ h1
         = if post.text
           .col-lg-4.col-md-3.col-sm-2.mb3
             .card
-              .card-body  
+              .card-body
                 = if post.isTwitter
                   p.badge.badge-primary.twitter
                     = fa-icon 'twitter'
@@ -84,7 +84,7 @@ h1
                     |&nbsp;&nbsp;
                     |Instagram
                 br
-                h5  
+                h5
                   |#
                   = model.title
                 p.card-text
