@@ -27,4 +27,9 @@ export default DS.Model.extend({
   isVideo:        Ember.computed('media_type', function(){
     return this.get('media_type') == 'video';
   }),
+
+  noMedia:        Ember.computed('isImage', 'isVideo', function(){
+    return this.get('isImage') || this.get('isVideo');
+  }),
+
 });
