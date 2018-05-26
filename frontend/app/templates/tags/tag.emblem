@@ -1,18 +1,9 @@
-h5.mb3
-  = link-to 'tags'
-    |←&nbsp;back 
-h3  
+h1
   |#
   = model.title
 
+
 .container
-  .row.mt6.mb6
-    .col-lg-4
-      h5 Post Count
-    .col-lg-4
-      h5 Like Count
-    .col-lg-4
-      h5 Retweet Count
   .row.mt6.mb6
     .col-lg-4
       = line-chart data=model.data_post_count options=model.post_options
@@ -53,7 +44,10 @@ h3
       = if post.isVideo
         .col-lg-4.col-md-3.col-sm-2.mb3
           .card
-            video.card-mp4.card-mp4-top alt="Card image cap" src=post.media_url controls='play'
+            = if post.is_mp4
+              video.card-mp4.card-mp4-top alt="Card image cap" src=post.media_url controls='play  '
+            = else
+              iframe.card-yt.card-yt-top src=post.media_url allow="encrypted-media" allowfullscreen=true
             .card-body
               = if post.isTwitter
                 p.badge.badge-primary.twitter

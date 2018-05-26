@@ -17,6 +17,10 @@ export default DS.Model.extend({
   media_type:       DS.attr('string'),
   media_url:        DS.attr('string'),
 
+  is_mp4:           computed('media_url', function() {
+    return this.get('media_url').includes("mp4");
+  }),
+
   isTwitter:        computed('origin', function(){
     return this.get('origin') == 'TWITTER';
   }),

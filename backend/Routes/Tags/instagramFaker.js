@@ -88,7 +88,7 @@ var sampleData = {
                 "height": 480
             },
             "standard_resolution": {
-                "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+                "url": "https://www.youtube.com/embed/VeSWKffbPpI",
                 "width": 640,
                 "height": 640
             }
