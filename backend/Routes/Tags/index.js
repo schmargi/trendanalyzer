@@ -115,6 +115,12 @@ var postsForTags = function(tags, location, sortBy) {
     var presterday_like_count = 0;
     var presterday_retweet_count = 0;
     var presterday_post_count = 0;
+    var one_before_presterday_like_count = 0;
+    var one_before_presterday_retweet_count = 0;
+    var one_before_presterday_post_count = 0;
+    var two_before_presterday_like_count = 0;
+    var two_before_presterday_retweet_count = 0;
+    var two_before_presterday_post_count = 0;
 
     var fittingPosts = posts.filter(post => {
       return post.tags.includes(tag.name) && post.city == location
@@ -136,6 +142,9 @@ var postsForTags = function(tags, location, sortBy) {
       var today_analytics = analyticsForDate(post, moment().startOf('day'));
       var yesterday_analytics = analyticsForDate(post, moment().subtract(1, 'days').startOf('day'));
       var presterday_analytics = analyticsForDate(post, moment().subtract(2, 'days').startOf('day'));
+      var one_before_presterday_analytics = analyticsForDate(post, moment().subtract(3, 'days').startOf('day'));
+      var two_before_presterday_analytics = analyticsForDate(post, moment().subtract(4, 'days').startOf('day'));
+
 
       today_like_count += today_analytics.like_count;
       today_post_count += today_analytics.post_count;
@@ -146,13 +155,25 @@ var postsForTags = function(tags, location, sortBy) {
       presterday_like_count += presterday_analytics.like_count;
       presterday_retweet_count += presterday_analytics.post_count;
       presterday_post_count += presterday_analytics.retweet_count;
+      one_before_presterday_like_count += one_before_presterday_analytics.like_count;
+      one_before_presterday_retweet_count += one_before_presterday_analytics.retweet_count;
+      one_before_presterday_post_count += one_before_presterday_analytics.post_count;
+      two_before_presterday_like_count += two_before_presterday_analytics.like_count;
+      two_before_presterday_retweet_count += two_before_presterday_analytics.retweet_count;
+      two_before_presterday_post_count += two_before_presterday_analytics.post_count;
 
     });
 
     var dates = _.uniq(fittingPosts.map(post => post.timestamp));
 
 
-    return new Tag(tag.id, tag.name, false, fittingPosts, score, fittingPosts.length, retweet_count, like_count, contains_twitter, contains_instagram, today_like_count, today_post_count, today_retweet_count, yesterday_like_count, yesterday_post_count, yesterday_retweet_count, presterday_like_count, presterday_retweet_count, presterday_post_count);
+    return new Tag(tag.id, tag.name, false, fittingPosts, score, fittingPosts.length, retweet_count,
+      like_count, contains_twitter, contains_instagram, today_like_count,
+      today_post_count, today_retweet_count, yesterday_like_count, yesterday_post_count,
+      yesterday_retweet_count, presterday_like_count, presterday_retweet_count,
+      presterday_post_count, one_before_presterday_like_count, one_before_presterday_retweet_count,
+      one_before_presterday_post_count, two_before_presterday_like_count, two_before_presterday_retweet_count,
+      two_before_presterday_post_count);
   }).filter(tag => tag.posts.length > 0)
 
   if (sortBy == "post_count") {
