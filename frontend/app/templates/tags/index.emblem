@@ -17,7 +17,7 @@ table.table
          inc index
       td
         h5
-          = link-to 'tags.tag' tag.title
+          = link-to 'tags.tag' tag.id
             |#
           = tag.title
       td

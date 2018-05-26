@@ -1,5 +1,6 @@
 module.exports = class Tag {
-  constructor(title, is_favorite, posts, score) {
+  constructor(id, title, is_favorite, posts, score) {
+    this.id = id;
     this.title = title;
     this.is_favorite = is_favorite;
     this.posts = posts;

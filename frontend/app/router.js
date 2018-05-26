@@ -10,7 +10,7 @@ Router.map(function() {
   this.route('imprint');
   this.route('about');
   this.route('tags', function(){
-    this.route('tag', {path: '/:tag_title'});
+    this.route('tag', {path: '/:tag_id'});
   });
 
 });
