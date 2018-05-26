@@ -1,9 +1,10 @@
-h1 hallo
+h1 Meine tollen Trends
 
 = each model as |tag|
   h1
     |#
     = tag.title
+  = line-chart data=tag.mydata options=tag.myoptions
   = each tag.posts as |post|
     h5 = post.text
     p
