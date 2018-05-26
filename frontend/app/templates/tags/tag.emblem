@@ -1,9 +1,18 @@
-h1
+h5.mb3
+  = link-to 'tags'
+    |←&nbsp;back 
+h3  
   |#
   = model.title
 
-
 .container
+  .row.mt6.mb6
+    .col-lg-4
+      h5 Post Count
+    .col-lg-4
+      h5 Like Count
+    .col-lg-4
+      h5 Retweet Count
   .row.mt6.mb6
     .col-lg-4
       = line-chart data=model.data_post_count options=model.post_options
