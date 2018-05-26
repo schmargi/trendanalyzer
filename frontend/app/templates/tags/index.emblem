@@ -9,6 +9,7 @@ table.table
       th scope="col"  Twitter / Instagram
       th scope="col"  total like Count
       th scope="col"  retweet count
+      th scope="col"  popularity score
   tbody
 
   = each model as |tag index|
@@ -50,6 +51,9 @@ table.table
       td
         p
           = tag.retweet_count
+      td
+        p
+          = tag.popularity
 
   / = each tag.posts as |post|
   /   h5 = post.text
