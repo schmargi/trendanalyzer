@@ -2,3 +2,18 @@
 @import "typography";
 
 @import "ember-cli-bootstrap-4/bootstrap";
+
+.card-img {
+  max-height: 220px;
+  object-fit: cover;
+}
+
+.instagram {
+  color: white;
+  background-color: #d1307b;
+}
+
+.twitter {
+  color: white;
+  background-color: #1ea1f3;
+}
