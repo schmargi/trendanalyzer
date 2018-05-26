@@ -5,5 +5,23 @@ h1 hallo
     |#
     = tag.title
   = each tag.posts as |post|
-    p = post.text
-    br
+    h5 = post.text
+    p = post.mediafile.type
+    p = post.city
+    p = post.retweet_count
+    p
+      = fa-icon 'thumbs-up'
+      |&nbsp;
+      = post.like_count
+
+    = if post.isTwitter
+      p
+        = fa-icon 'twitter'
+        |&nbsp;
+        = post.origin
+
+    = else
+      p
+        = fa-icon 'instagram'
+        |&nbsp;
+        = post.origin
