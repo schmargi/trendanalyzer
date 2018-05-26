@@ -7,7 +7,7 @@ var fake = function() {
     "type": "image",
     "images": {
       "standard_resolution": {
-        "url": faker.image.cats()
+        "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123)
       }
     },
     "user": {
@@ -64,7 +64,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 612,
                 "height": 612
             }
@@ -87,7 +87,7 @@ var sampleData = {
                 "height": 480
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 640,
                 "height": 640
             }
@@ -119,7 +119,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 612,
                 "height": 612
             }
@@ -170,7 +170,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 612,
                 "height": 612
             }
@@ -193,7 +193,7 @@ var sampleData = {
                 "height": 480
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 640,
                 "height": 640
             }
@@ -225,7 +225,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 612,
                 "height": 612
             }
@@ -276,7 +276,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 612,
                 "height": 612
             }
@@ -299,7 +299,7 @@ var sampleData = {
                 "height": 480
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 640,
                 "height": 640
             }
@@ -331,7 +331,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 612,
                 "height": 612
             }
@@ -382,7 +382,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 612,
                 "height": 612
             }
@@ -437,7 +437,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 612,
                 "height": 612
             }
