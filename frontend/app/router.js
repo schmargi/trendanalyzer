@@ -9,8 +9,10 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('imprint');
   this.route('about');
-  this.route('tags');
-  this.route('tag', {path: 'tag/:tag_title'});
+  this.route('tags', function(){
+    this.route('tag', {path: '/:tag_title'});
+  });
+
 });
 
 export default Router;
