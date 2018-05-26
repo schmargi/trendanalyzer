@@ -6,11 +6,11 @@ export default DS.Model.extend({
   title:           DS.attr('string'),
   posts:           DS.hasMany('post', {async: true}),
 
-  today:                      moment().format('YYYY-MM-DD'),
-  yesterday:                  moment().subtract(1,'days').format('YYYY-MM-DD'),
-  presterday:                 moment().subtract(2,'days').format('YYYY-MM-DD'),
-  one_before_presterday:      moment().subtract(3,'days').format('YYYY-MM-DD'),
-  two_before_presterday:      moment().subtract(4,'days').format('YYYY-MM-DD'),
+  today:                      moment().format('MMM Do'),
+  yesterday:                  moment().subtract(1,'days').format('MMM Do'),
+  presterday:                 moment().subtract(2,'days').format('MMM Do'),
+  one_before_presterday:      moment().subtract(3,'days').format('MMM Do'),
+  two_before_presterday:      moment().subtract(4,'days').format('MMM Do'),
 
   today_like_count:     DS.attr('number'),
   today_retweet_count:  DS.attr('number'),
@@ -42,9 +42,9 @@ export default DS.Model.extend({
 
   data_post_count:  computed('post_count', function(){
     return [
-      ['Days', 'Post Count'],
-      [this.get('one_before_presterday'), this.get('one_before_presterday_post_count')],
+      ['', ''],
       [this.get('two_before_presterday'), this.get('two_before_presterday_post_count')],
+      [this.get('one_before_presterday'), this.get('one_before_presterday_post_count')],
       [this.get('presterday'), this.get('presterday_post_count')],
       [this.get('yesterday'), this.get('yesterday_post_count')],
       [this.get('today'), this.get('today_post_count')],
@@ -52,9 +52,9 @@ export default DS.Model.extend({
   }),
   data_like_count:  computed('like_count', function(){
     return [
-      ['Days', 'Like Count'],
-      [this.get('one_before_presterday'), this.get('one_before_presterday_like_count')],
+      ['', ''],
       [this.get('two_before_presterday'), this.get('two_before_presterday_like_count')],
+      [this.get('one_before_presterday'), this.get('one_before_presterday_like_count')],
       [this.get('presterday'), this.get('presterday_like_count')],
       [this.get('yesterday'), this.get('yesterday_like_count')],
       [this.get('today'), this.get('today_like_count')],
@@ -62,9 +62,9 @@ export default DS.Model.extend({
   }),
   data_retweet_count:  computed('retweet_count', function(){
     return [
-      ['Days', 'Retweet Count'],
-      [this.get('one_before_presterday'), this.get('one_before_presterday_retweet_count')],
+      ['', ''],
       [this.get('two_before_presterday'), this.get('two_before_presterday_retweet_count')],
+      [this.get('one_before_presterday'), this.get('one_before_presterday_retweet_count')],
       [this.get('presterday'), this.get('presterday_retweet_count')],
       [this.get('yesterday'), this.get('yesterday_retweet_count')],
       [this.get('today'), this.get('today_retweet_count')],
@@ -73,7 +73,7 @@ export default DS.Model.extend({
 
   retweet_options: computed(function() {
     return {
-        title: 'Retweet Count',
+        title: '',
         height: 300,
         legend: {position: 'none'},
         vAxis: {
@@ -91,7 +91,7 @@ export default DS.Model.extend({
     }),
   like_options: computed(function() {
     return {
-        title: 'Like Count',
+        title: '',
         height: 300,
         legend: {position: 'none'},
         vAxis: {
@@ -109,7 +109,7 @@ export default DS.Model.extend({
     }),
   post_options: computed(function() {
     return {
-        title: 'Post Count',
+        title: '',
         height: 300,
         legend: {position: 'none'},
         vAxis: {
