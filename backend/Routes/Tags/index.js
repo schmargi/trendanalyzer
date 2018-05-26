@@ -6,6 +6,7 @@ var instagramFaker = require('./instagramFaker');
 var twitterFaker = require('./twitterFaker');
 var Post = require('./post');
 var Tag = require('./tag');
+var Sort = require('./SortingHelper');
 
 router.use(bodyParser.json());
 
@@ -43,7 +44,6 @@ router.use(bodyParser.json());
       location = item.location.name;
 
     }
-    console.log(location);
 
     postsIDsCounter += 1;
     return new Post(postsIDsCounter, text, item.link, item.tags, item.created_time, "Regensburg", {"name": item.user.username, "followers_count": 0}, "INSTAGRAM", {"type": item.type, "url": url}, item.likes.count, 0, false);
@@ -56,10 +56,7 @@ router.use(bodyParser.json());
     // console.log(tags);
 
     postsIDsCounter += 1;
-    var test =  new Post(postsIDsCounter, item.text, item.entities.urls[0].expanded_url, hashtags, item.created_at, item.place.name, {"name": item.user.name, "followers_count": item.user.followers_count}, "TWITTER", null, item.favorite_count, item.retweet_count, false);
-    console.log(test);
-    return test;
-
+    return new Post(postsIDsCounter, item.text, item.entities.urls[0].expanded_url, hashtags, item.created_at, item.place.name, {"name": item.user.name, "followers_count": item.user.followers_count}, "TWITTER", null, item.favorite_count, item.retweet_count, false);
   });
 
   tags = _.uniq(tags);
@@ -75,8 +72,13 @@ router.get('/', function (req, res) {
   if (location == undefined) {
     location = "Regensburg";
   }
+  var sortBy = req.query.sort_by;
+  if (sortBy == undefined) {
+    sortBy = "post_count"
+  }
 
-  var fittingTags = postsForTags(tags, location);
+
+  var fittingTags = postsForTags(tags, location, sortBy);
   console.log(fittingTags);
 
   res.status(200).send({tags: fittingTags});
@@ -87,15 +89,21 @@ router.get('/:id', function(req, res) {
   if (location == undefined) {
     location = "Regensburg";
   }
+  var sortBy = req.query.sort_by;
+  if (sortBy == undefined) {
+    sortBy = "post_count"
+  }
 
-  res.status(200).send(JSON.stringify({tags: postsForTags(tags.filter(tag => tag.id == req.params.id), location)}));
+  res.status(200).send(JSON.stringify({tags: postsForTags(tags.filter(tag => tag.id == req.params.id), location, sortBy)[0]}));
 });
 
 module.exports = router;
 
-var postsForTags = function(tags, location) {
-  return tags.map(tag => {
+var postsForTags = function(tags, location, sortBy) {
+  tags = tags.map(tag => {
     var score = 0;
+    var retweet_count = 0;
+    var like_count = 0;
     var fittingPosts = posts.filter(post => {
       return post.tags.includes(tag.name) && post.city == location
     });
@@ -103,16 +111,19 @@ var postsForTags = function(tags, location) {
     fittingPosts.forEach(post => {
       score = score + post.like_count * 0.01;
       score = score + post.retweet_count * 0.5;
+      retweet_count += post.retweet_count;
+      like_count += post.like_count;
     });
-    return new Tag(tag.id, tag.name, false, fittingPosts, score);
+    return new Tag(tag.id, tag.name, false, fittingPosts, score, fittingPosts.length, retweet_count, like_count);
   }).filter(tag => tag.posts.length > 0)
-    .sort(function(lhs, rhs) {
-      if (lhs.score > rhs.score) {
-        return -1;
-      }
-      if (lhs.score < rhs.score) {
-        return +1;
-      }
-      return 0;
-  });
+
+  if (sortBy == "post_count") {
+    return tags.sort(Sort.post_count);
+  } else if (sortBy == "like_count") {
+    return tags.sort(Sort.like_count);
+  } else if (sortBy == "retweet_count") {
+    return tags.sort(Sort.retweet_count);
+  } else {
+    return tags.sort(Sort.popularity);
+  }
 }
