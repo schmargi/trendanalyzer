@@ -1,4 +1,5 @@
 import DS from 'ember-data';
+import { computed } from '@ember/object';
 
 export default DS.Model.extend({
   text:             DS.attr('string'),
@@ -16,7 +17,7 @@ export default DS.Model.extend({
   media_type:       DS.attr('string'),
   media_url:        DS.attr('string'),
 
-  isTwitter:        Ember.computed('origin', function(){
+  isTwitter:        computed('origin', function(){
     return this.get('origin') == 'TWITTER';
   }),
 });
