@@ -4,6 +4,7 @@ var router = express.Router();
 var bodyParser = require('body-parser');
 var instagramFaker = require('./instagramFaker');
 var twitterFaker = require('./twitterFaker');
+var moment = require('moment');
 var Post = require('./post');
 var Tag = require('./tag');
 var Sort = require('./SortingHelper');
@@ -46,7 +47,7 @@ router.use(bodyParser.json());
     }
 
     postsIDsCounter += 1;
-    return new Post(postsIDsCounter, text, item.link, item.tags, item.created_time, "Regensburg", {"name": item.user.username, "followers_count": 0}, "INSTAGRAM", {"type": item.type, "url": url}, item.likes.count, 0, false);
+    return new Post(postsIDsCounter, text, item.link, item.tags, moment.unix(item.created_time).format('YYYY-MM-DD HH:mm:ss.SSS Z'), "Regensburg", {"name": item.user.username, "followers_count": 0}, "INSTAGRAM", {"type": item.type, "url": url}, item.likes.count, 0, false);
   });
 
   var twitterPosts = twitterFaker.sampleData.statuses.map( item => {
@@ -56,7 +57,7 @@ router.use(bodyParser.json());
     // console.log(tags);
 
     postsIDsCounter += 1;
-    return new Post(postsIDsCounter, item.text, item.entities.urls[0].expanded_url, hashtags, item.created_at, item.place.name, {"name": item.user.name, "followers_count": item.user.followers_count}, "TWITTER", null, item.favorite_count, item.retweet_count, false);
+    return new Post(postsIDsCounter, item.text, item.entities.urls[0].expanded_url, hashtags, moment(item.created_at, "ddd MMM DD hh:mm:ss Z YYYY").format('YYYY-MM-DD HH:mm:ss.SSS Z'), item.place.name, {"name": item.user.name, "followers_count": item.user.followers_count}, "TWITTER", null, item.favorite_count, item.retweet_count, false);
   });
 
   tags = _.uniq(tags);
@@ -77,9 +78,7 @@ router.get('/', function (req, res) {
     sortBy = "post_count"
   }
 
-
   var fittingTags = postsForTags(tags, location, sortBy);
-  console.log(fittingTags);
 
   res.status(200).send({tags: fittingTags});
 });
@@ -106,6 +105,17 @@ var postsForTags = function(tags, location, sortBy) {
     var like_count = 0;
     var contains_twitter = false;
     var contains_instagram = false;
+
+    var today_like_count = 0;
+    var today_post_count = 0;
+    var today_retweet_count = 0;
+    var yesterday_like_count = 0;
+    var yesterday_post_count = 0;
+    var yesterday_retweet_count = 0;
+    var presterday_like_count = 0;
+    var presterday_retweet_count = 0;
+    var presterday_post_count = 0;
+
     var fittingPosts = posts.filter(post => {
       return post.tags.includes(tag.name) && post.city == location
     });
@@ -121,8 +131,28 @@ var postsForTags = function(tags, location, sortBy) {
       if (post.origin == "INSTAGRAM") {
         contains_instagram = true;
       }
+
+
+      var today_analytics = analyticsForDate(post, moment().startOf('day'));
+      var yesterday_analytics = analyticsForDate(post, moment().subtract(1, 'days').startOf('day'));
+      var presterday_analytics = analyticsForDate(post, moment().subtract(2, 'days').startOf('day'));
+
+      today_like_count += today_analytics.like_count;
+      today_post_count += today_analytics.post_count;
+      today_retweet_count += today_analytics.retweet_count;
+      yesterday_like_count += yesterday_analytics.like_count;
+      yesterday_post_count += yesterday_analytics.post_count;
+      yesterday_retweet_count += yesterday_analytics.retweet_count;
+      presterday_like_count += presterday_analytics.like_count;
+      presterday_retweet_count += presterday_analytics.post_count;
+      presterday_post_count += presterday_analytics.retweet_count;
+
     });
-    return new Tag(tag.id, tag.name, false, fittingPosts, score, fittingPosts.length, retweet_count, like_count, contains_twitter, contains_instagram);
+
+    var dates = _.uniq(fittingPosts.map(post => post.timestamp));
+
+
+    return new Tag(tag.id, tag.name, false, fittingPosts, score, fittingPosts.length, retweet_count, like_count, contains_twitter, contains_instagram, today_like_count, today_post_count, today_retweet_count, yesterday_like_count, yesterday_post_count, yesterday_retweet_count, presterday_like_count, presterday_retweet_count, presterday_post_count);
   }).filter(tag => tag.posts.length > 0)
 
   if (sortBy == "post_count") {
@@ -133,5 +163,13 @@ var postsForTags = function(tags, location, sortBy) {
     return tags.sort(Sort.retweet_count);
   } else {
     return tags.sort(Sort.popularity);
+  }
+}
+
+var analyticsForDate = function(post, compareMomemnt) {
+  if (moment(post.timestamp, 'YYYY-MM-DD HH:mm:ss.SSS Z').startOf('day').isSame(compareMomemnt)) {
+    return {like_count: post.like_count, retweet_count: post.retweet_count, post_count: 1};
+  } else {
+    return {like_count: 0, retweet_count: 0, post_count: 0};
   }
 }
