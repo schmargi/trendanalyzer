@@ -12,56 +12,27 @@ h1
     .col-lg-4
       = line-chart data=model.data_retweet_count options=model.retweet_options
 
-/ = each model.posts as |post|
-/   h5 = post.text
-/   p
-/     |von &nbsp;
-/     = post.user_name
-/     | &nbsp; in &nbsp;
-/     = post.city
-/   p
-/     = fa-icon 'thumbs-up'
-/     |&nbsp;
-/     = post.like_count
-/
-/   = if post.isTwitter
-/     p
-/       = fa-icon 'twitter'
-/       |&nbsp;
-/       = post.origin
-/
-/   = else
-/     p
-/       = fa-icon 'instagram'
-/       |&nbsp;
-/       = post.origin
-/
-/
-/   = if post.isImage
-/     h1
-/       = post.media_type
-/     img alt="Brand" src=post.media_url
-/   = if post.isVideo
-/     h1
-/       = post.media_type
-/     video alt="Brand" src=post.media_url
-
 .container
   .row
     = each model.posts as |post|
       = if post.isImage
         .col-lg-4.col-md-3.col-sm-2.mb3
           .card
-            img.card-img-top alt="Card image cap" src=post.media_url
-            .card-body
-              h5.card-title
-                span
-                  = if post.isTwitter
-                    p
-                      = fa-icon 'twitter'
-                  = else
-                    p
-                      = fa-icon 'instagramm'
+            img.card-img.card-img-top alt="Card image cap" src=post.media_url
+            .card-body  
+              = if post.isTwitter
+                p.badge.badge-primary.twitter
+                  = fa-icon 'twitter'
+                  |&nbsp;&nbsp;
+                  |Twitter
+              = else
+                p.badge.badge-primary.instagram
+                  = fa-icon 'instagram'
+                  |&nbsp;&nbsp;
+                  |Instagram
+              br
+              h5  
+                |#
                 = model.title
               p.card-text
                 = post.text
@@ -74,15 +45,20 @@ h1
         .col-lg-4.col-md-3.col-sm-2.mb3
           .card
             / video
-            .card-body
-              h5.card-title
-                span
-                  = if post.isTwitter
-                    p
-                      = fa-icon 'twitter'
-                  = else
-                    p
-                      = fa-icon 'instagramm'
+            .card-body  
+              = if post.isTwitter
+                p.badge.badge-primary.twitter
+                  = fa-icon 'twitter'
+                  |&nbsp;&nbsp;
+                  |Twitter
+              = else
+                p.badge.badge-primary.instagram
+                  = fa-icon 'instagram'
+                  |&nbsp;&nbsp;
+                  |Instagram
+              br
+              h5  
+                |#
                 = model.title
               p.card-text
                 = post.text
@@ -96,16 +72,20 @@ h1
         = if post.text
           .col-lg-4.col-md-3.col-sm-2.mb3
             .card
-              .card-body
-                h5.card-title
-                  span
-                    = if post.isTwitter
-                      p
-                        = fa-icon 'twitter'
-
-                    = else
-                      p
-                        = fa-icon 'instagramm'
+              .card-body  
+                = if post.isTwitter
+                  p.badge.badge-primary.twitter
+                    = fa-icon 'twitter'
+                    |&nbsp;&nbsp;
+                    |Twitter
+                = else
+                  p.badge.badge-primary.instagram
+                    = fa-icon 'instagram'
+                    |&nbsp;&nbsp;
+                    |Instagram
+                br
+                h5  
+                  |#
                   = model.title
                 p.card-text
                   = post.text
