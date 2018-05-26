@@ -26,28 +26,28 @@ export default DS.Model.extend({
     return posts.indexOf("INSTAGRAM") > -1;
   }),
 
-  data_post_count:  computed('postCount', function(){
+  data_post_count:  computed('post_count', function(){
     return [
       ['Days', 'Post Count'],
-      [this.get('today'), this.get('postCount')],
-      [this.get('yesterday'), this.get('postCount')],
-      [this.get('yesteryesterday'), this.get('postCount')],
+      [this.get('today'), this.get('post_count')],
+      [this.get('yesterday'), this.get('post_count')],
+      [this.get('yesteryesterday'), this.get('post_count')],
     ];
   }),
   data_like_count:  computed('like_count', function(){
     return [
       ['Days', 'Like Count'],
-      [this.get('today'), this.get('likeCountSum')],
-      [this.get('yesterday'), this.get('likeCountSum')],
-      [this.get('yesteryesterday'), this.get('likeCountSum')],
+      [this.get('today'), this.get('like_count')],
+      [this.get('yesterday'), this.get('like_count')],
+      [this.get('yesteryesterday'), this.get('like_count')],
     ];
   }),
   data_retweet_count:  computed('retweet_count', function(){
     return [
       ['Days', 'Retweet Count'],
-      [this.get('today'), this.get('retweetCountSum')],
-      [this.get('yesterday'), this.get('retweetCountSum')],
-      [this.get('yesteryesterday'), this.get('retweetCountSum')],
+      [this.get('today'), this.get('retweet_count')],
+      [this.get('yesterday'), this.get('retweet_count')],
+      [this.get('yesteryesterday'), this.get('retweet_count')],
     ];
   }),
 
