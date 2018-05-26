@@ -48,17 +48,26 @@ router.use(bodyParser.json());
   posts.push(...instagramPosts);
 
 router.get('/', function (req, res) {
-var location = req.query.location;
-if (location == undefined) {
-  location = "Regensburg";
-}
-console.log(location);
-var fittingTags = tags.map(tag => {
-  var fittingPosts = posts.filter(post => {
-    return post.tags.includes(tag) && post.city == location
+  var location = req.query.location;
+  if (location == undefined) {
+    location = "Regensburg";
+  }
+
+  var fittingTags = tags.map(tag => {
+    var fittingPosts = posts.filter(post => {
+      return post.tags.includes(tag) && post.city == location
+    });
+    return new Tag(tag, false, fittingPosts);
+  }).filter(tag => tag.posts.length > 0)
+    .sort(function(lhs, rhs) {
+      if (lhs.posts.length > rhs.posts.length) {
+        return -1;
+      }
+      if (lhs.posts.length < rhs.posts.length) {
+        return +1;
+      }
+      return 0;
   });
-  return new Tag(tag, false, fittingPosts);
-}).filter(tag => tag.posts.length > 0);
   res.status(200).send({tags: fittingTags});
 });
 

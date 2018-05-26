@@ -1,0 +1,38 @@
+h1
+  |#
+  = model.title
+
+= line-chart data=model.mydata options=model.myoptions
+= each model.posts as |post|
+  h5 = post.text
+  p
+    |von &nbsp;
+    = post.user_name
+    | &nbsp; in &nbsp;
+    = post.city
+  p
+    = fa-icon 'thumbs-up'
+    |&nbsp;
+    = post.like_count
+
+  = if post.isTwitter
+    p
+      = fa-icon 'twitter'
+      |&nbsp;
+      = post.origin
+
+  = else
+    p
+      = fa-icon 'instagram'
+      |&nbsp;
+      = post.origin
+
+
+  = if post.isImage
+    h1
+      = post.media_type
+    img alt="Brand" src=post.media_url
+  = if post.isVideo
+    h1
+      = post.media_type
+    video alt="Brand" src=post.media_url

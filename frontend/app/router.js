@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('imprint');
   this.route('about');
   this.route('tags');
+  this.route('tag', {path: 'tag/:tag_title'});
 });
 
 export default Router;

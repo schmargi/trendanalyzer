@@ -1,39 +1,73 @@
-h1 hallo
+h1 Meine tollen Trends
 
-= each model as |tag|
-  h1
-    |#
-    = tag.title
-  = each tag.posts as |post|
-    h5 = post.text
-    p
-      |von &nbsp;
-      = post.user_name
-      | &nbsp; in &nbsp;
-      = post.city
-    p
-      = fa-icon 'thumbs-up'
-      |&nbsp;
-      = post.like_count
+table.table
+  thead
+    tr
+      th scope="col"  #
+      th scope="col"  Tag
+      th scope="col"  Total Post Count
+      th scope="col"  Twitter / Instagram
+      th scope="col"  total like Count
+      th scope="col"  retweet count
+  tbody
 
-    = if post.isTwitter
-      p
-        = fa-icon 'twitter'
-        |&nbsp;
-        = post.origin
+  = each model as |tag index|
+    tr
+      th scope="row"
+         inc index
+      td
+        h5
+          = link-to 'tag' tag.title
+            |#
+          = tag.title
+      td
+        p
+          = tag.postCount
+      td
+        = if tag.hasTwitter
+          span
+            = fa-icon 'twitter'
+            |&nbsp;&nbsp;
+        = if tag.hasInstagram
+          span
+            = fa-icon 'instagram'
+      td
+        p
+          = tag.likeCountSum
+      td
+        p
+          = tag.retweetCountSum
 
-    = else
-      p
-        = fa-icon 'instagram'
-        |&nbsp;
-        = post.origin
-
-
-    = if post.isImage
-      h1
-        = post.media_type
-      img alt="Brand" src=post.media_url
-    = if post.isVideo
-      h1
-        = post.media_type
-      video alt="Brand" src=post.media_url
+  / = each tag.posts as |post|
+  /   h5 = post.text
+  /   p
+  /     |von &nbsp;
+  /     = post.user_name
+  /     | &nbsp; in &nbsp;
+  /     = post.city
+  /   p
+  /     = fa-icon 'thumbs-up'
+  /     |&nbsp;
+  /     = post.like_count
+  /
+  /   = if post.isTwitter
+  /     p
+  /       = fa-icon 'twitter'
+  /       |&nbsp;
+  /       = post.origin
+  /
+  /   = else
+  /     p
+  /       = fa-icon 'instagram'
+  /       |&nbsp;
+  /       = post.origin
+  /
+  /
+  /   = if post.isImage
+  /     h1
+  /       = post.media_type
+  /     img alt="Brand" src=post.media_url
+  /   = if post.isVideo
+  /     h1
+  /       = post.media_type
+  /     video alt="Brand" src=post.media_url
