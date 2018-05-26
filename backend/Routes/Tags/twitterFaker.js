@@ -612,6 +612,481 @@ var fake = function() {
               "favorite_count": faker.random.number({min: 0, max: 50}),
               "retweet_count": faker.random.number({min: 0, max: 20})
             },
+            {
+              "text": "Bin gerade auf dem Medientag bei der MZ. So interessant! #MZ",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "MZ"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "SpongebogFan",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Ich könnte mir als Werkstudent keinen besseren Arbeitgeber als die #MZ vorstellen. Jeden Tag gratis Eis!",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "MZ"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "LexiSchwesti",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Vorsicht Blitzer bei der #MZ",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "MZ"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "Blitzermeldenismylife",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Die #MZ hat ein paar so coole Challenges auf der Hackaburg ausgeschrieben.",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "MZ"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "LustMulch123",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Wenn ich groß bin, will ich Redakteur bei der #MZ werden.",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "MZ"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "Quirinhuber",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Heute Artikel über mich und meine Zeit bei GNTM in der #MZ",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "MZ"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "PatriciaPalme",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Der Konzertbericht über Taylor Swift in der #MZ ist so wahr!",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "MZ"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "LeonieLover",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Heute in der #MZ ne Anzeige von nem T1 gesehen. Da fahr ich heute hin. Hoffentlich geht noch was mit dem Preis.",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "MZ"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "VWFan",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Ich würde so gerne bei der #MZ als Redakteurin anfangen. Wünscht mir Glück!",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "MZ"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "LenaKatharina123",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Wenn die #MZ über dich berichtet aka wenn all deine Träume wahr werden..",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "MZ"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "DreamingForLove",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Meine Mutter hat sich endlich wieder nen Abo geholt. Jetzt wird immer die Mittelbayerische gelesem. Für mich eh die beste Zeitung. #MZ",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "MZ"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "ReadingMakesMeKlug",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Durch den Aufruf in der Mittelbayerischen Zeitung wurde endlich der UBahn Schläger gefasst! Bin so erleichtert! Danke #MZ!!",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "MZ"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "LuigiIsMariosBigB",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Hab mich heute auf ne Werkstudentenstelle bei der Mittelbayerischen beworben. Drückt mir bitte die Daumen #MZ",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "MZ"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "NnaHagen",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Mittelbayerische Zeitung hat so ein schönes Gebäude. Wahnsinn! #MZ",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "MZ"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "ArchitectureLovers",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Am Morgen ne schöne heiße Tasse Kaffe und dazu die neue Mittelbayerische.. einfach perfekt! #MZ",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "MZ"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "Genussmensch1234",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Auf der Website von der Mittelbayerischen kann man für seine persönliche Bierkönigin voten. #MZ",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "MZ"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "3BeerAreASchnitelToo",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Wenn dir dein Schnitzel auf deine Mittelbayerische fällt. Na toll. #MZ",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "MZ"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "MarioBrother",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Hab für meine Mama ne Geburstagsanzeige in der Mittelbayerischen Zeitung gemacht. Ich glaub sie wird sich so freuen! #MZ",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "MZ"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "MotherLover",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Mittelbayerische Zeitung - einfach mein Leben #MZ",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "MZ"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "NaniNana",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
 
           ],
           "search_metadata": {
