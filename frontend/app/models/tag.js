@@ -5,10 +5,10 @@ export default DS.Model.extend({
   title:           DS.attr('string'),
   posts:           DS.hasMany('post', {async: true}),
 
-  postCount:       Ember.computed.readOnly('posts.length'),
+  postCount:      computed.readOnly('posts.length'),
   is_favorite:     DS.attr('boolean', { defaultValue: false }),
 
-  likeCountSum:    Ember.computed('posts.like_count', function(){
+  likeCountSum:   computed('posts.like_count', function(){
     let posts = this.get('posts').mapBy('like_count');
     var sum = 0;
     console.log(posts);
@@ -18,7 +18,7 @@ export default DS.Model.extend({
     return sum;
   }),
 
-  retweetCountSum:    Ember.computed('posts.retweet_count', function(){
+  retweetCountSum:   computed('posts.retweet_count', function(){
     let posts = this.get('posts').mapBy('retweet_count');
     var sum = 0;
     for (var i = 0; i < posts.length; i++) {
@@ -27,12 +27,12 @@ export default DS.Model.extend({
     return sum;
   }),
 
-  hasTwitter:      Ember.computed('posts.origin', function(){
+  hasTwitter:     computed('posts.origin', function(){
     let posts = this.get('posts').mapBy('origin');
     return posts.indexOf("TWITTER") > -1;
   }),
 
-  hasInstagram:      Ember.computed('posts.origin', function(){
+  hasInstagram:     computed('posts.origin', function(){
     let posts = this.get('posts').mapBy('origin');
     return posts.indexOf("INSTAGRAM") > -1;
   }),
