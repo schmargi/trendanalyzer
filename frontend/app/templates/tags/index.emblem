@@ -1,4 +1,15 @@
 img.logo alt="Brand" src="%PUBLIC_URL%/../../assets/logo.png"
+.btn-group
+  button#location.btn.btn-secondary.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button"
+    |Location
+  .dropdown-menu
+    a.dropdown-item click="'locationSelection' 'Location'" Location
+    .dropdown-divider
+    a.dropdown-item click="'locationSelection' 'Regensburg'" Regensburg
+    a.dropdown-item click="'locationSelection' 'München'" München
+
+
+
 
 table.table
   thead
@@ -6,11 +17,13 @@ table.table
       th scope="col"  #
       th scope="col"  Tag
       th scope="col"  Total Post Count
-      th scope="col"  Twitter / Instagram
-      th scope="col"  total like Count
-      th scope="col"  retweet count
-      th scope="col"  popularity score
+      th scope="col"  Platform
+      th scope="col"  Total Like Count
+      th scope="col"  Retweet Count
+ 	  th scope="col"  Popularity Score
   tbody
+
+
 
   = each model as |tag index|
     tr
@@ -31,8 +44,8 @@ table.table
             |&nbsp;&nbsp;
           span
             = fa-icon 'instagram'
-  
-        = else 
+
+        = else
           = if tag.contains_twitter
             span
               = fa-icon 'twitter'
