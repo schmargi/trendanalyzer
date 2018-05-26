@@ -43,7 +43,7 @@ var sampleData = {
             "id": "25663923"
         },
         "likes": {
-            "count": faker.random.number({min: 0, max: 100000})
+            "count": faker.random.number({min: 0, max: 100})
         },
         "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
@@ -100,7 +100,7 @@ var sampleData = {
         },
         "caption": null,
         "likes": {
-            "count": faker.random.number({min: 0, max: 100000})
+            "count": faker.random.number({min: 0, max: 100})
         },
         "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
@@ -149,7 +149,7 @@ var sampleData = {
             "id": "25663923"
         },
         "likes": {
-            "count": faker.random.number({min: 0, max: 100000})
+            "count": faker.random.number({min: 0, max: 100})
         },
         "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
@@ -206,7 +206,7 @@ var sampleData = {
         },
         "caption": null,
         "likes": {
-            "count": faker.random.number({min: 0, max: 100000})
+            "count": faker.random.number({min: 0, max: 100})
         },
         "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
@@ -255,7 +255,7 @@ var sampleData = {
             "id": "25663923"
         },
         "likes": {
-            "count": faker.random.number({min: 0, max: 100000})
+            "count": faker.random.number({min: 0, max: 100})
         },
         "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
@@ -312,7 +312,7 @@ var sampleData = {
         },
         "caption": null,
         "likes": {
-            "count": faker.random.number({min: 0, max: 100000})
+            "count": faker.random.number({min: 0, max: 100})
         },
         "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
@@ -361,7 +361,7 @@ var sampleData = {
             "id": "25663923"
         },
         "likes": {
-            "count": faker.random.number({min: 0, max: 100000})
+            "count": faker.random.number({min: 0, max: 100})
         },
         "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
@@ -418,7 +418,7 @@ var sampleData = {
         },
         "caption": null,
         "likes": {
-            "count": faker.random.number({min: 0, max: 100000})
+            "count": faker.random.number({min: 0, max: 100})
         },
         "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
@@ -467,7 +467,7 @@ var sampleData = {
             "id": "25663923"
         },
         "likes": {
-            "count": faker.random.number({min: 0, max: 100000})
+            "count": faker.random.number({min: 0, max: 100})
         },
         "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
@@ -519,7 +519,7 @@ var sampleData = {
           "id": "25663923"
       },
       "likes": {
-          "count": faker.random.number({min: 0, max: 100000})
+          "count": faker.random.number({min: 0, max: 100})
       },
       "link": faker.internet.url()+'/'+faker.random.number(1000000),
       "user": {
@@ -571,7 +571,7 @@ var sampleData = {
         "id": "25663923"
     },
     "likes": {
-        "count": faker.random.number({min: 0, max: 100000})
+        "count": faker.random.number({min: 0, max: 100})
     },
     "link": faker.internet.url()+'/'+faker.random.number(1000000),
     "user": {
@@ -623,7 +623,7 @@ var sampleData = {
         "id": "25663923"
     },
     "likes": {
-        "count": faker.random.number({min: 0, max: 100000})
+        "count": faker.random.number({min: 0, max: 100})
     },
     "link": faker.internet.url()+'/'+faker.random.number(1000000),
     "user": {
@@ -675,7 +675,7 @@ var sampleData = {
         "id": "25663923"
     },
     "likes": {
-        "count": faker.random.number({min: 0, max: 100000})
+        "count": faker.random.number({min: 0, max: 100})
     },
     "link": faker.internet.url()+'/'+faker.random.number(1000000),
     "user": {
@@ -727,7 +727,7 @@ var sampleData = {
         "id": "25663923"
     },
     "likes": {
-        "count": faker.random.number({min: 0, max: 100000})
+        "count": faker.random.number({min: 0, max: 100})
     },
     "link": faker.internet.url()+'/'+faker.random.number(1000000),
     "user": {
@@ -779,7 +779,7 @@ var sampleData = {
         "id": "25663923"
     },
     "likes": {
-        "count": faker.random.number({min: 0, max: 100000})
+        "count": faker.random.number({min: 0, max: 100})
     },
     "link": faker.internet.url()+'/'+faker.random.number(1000000),
     "user": {
@@ -831,7 +831,7 @@ var sampleData = {
         "id": "25663923"
     },
     "likes": {
-        "count": faker.random.number({min: 0, max: 100000})
+        "count": faker.random.number({min: 0, max: 100})
     },
     "link": faker.internet.url()+'/'+faker.random.number(1000000),
     "user": {
@@ -883,7 +883,7 @@ var sampleData = {
         "id": "25663923"
     },
     "likes": {
-        "count": faker.random.number({min: 0, max: 100000})
+        "count": faker.random.number({min: 0, max: 100})
     },
     "link": faker.internet.url()+'/'+faker.random.number(1000000),
     "user": {
@@ -935,7 +935,7 @@ var sampleData = {
         "id": "25663923"
     },
     "likes": {
-        "count": faker.random.number({min: 0, max: 100000})
+        "count": faker.random.number({min: 0, max: 100})
     },
     "link": faker.internet.url()+'/'+faker.random.number(1000000),
     "user": {
@@ -987,7 +987,7 @@ var sampleData = {
         "id": "25663923"
     },
     "likes": {
-        "count": faker.random.number({min: 0, max: 100000})
+        "count": faker.random.number({min: 0, max: 100})
     },
     "link": faker.internet.url()+'/'+faker.random.number(1000000),
     "user": {
@@ -1039,7 +1039,7 @@ var sampleData = {
         "id": "25663923"
     },
     "likes": {
-        "count": faker.random.number({min: 0, max: 100000})
+        "count": faker.random.number({min: 0, max: 100})
     },
     "link": faker.internet.url()+'/'+faker.random.number(1000000),
     "user": {
@@ -1091,7 +1091,7 @@ var sampleData = {
         "id": "25663923"
     },
     "likes": {
-        "count": faker.random.number({min: 0, max: 100000})
+        "count": faker.random.number({min: 0, max: 100})
     },
     "link": faker.internet.url()+'/'+faker.random.number(1000000),
     "user": {
@@ -1143,7 +1143,7 @@ var sampleData = {
         "id": "25663923"
     },
     "likes": {
-        "count": faker.random.number({min: 0, max: 100000})
+        "count": faker.random.number({min: 0, max: 100})
     },
     "link": faker.internet.url()+'/'+faker.random.number(1000000),
     "user": {
@@ -1195,7 +1195,7 @@ var sampleData = {
         "id": "25663923"
     },
     "likes": {
-        "count": faker.random.number({min: 0, max: 100000})
+        "count": faker.random.number({min: 0, max: 100})
     },
     "link": faker.internet.url()+'/'+faker.random.number(1000000),
     "user": {
@@ -1247,7 +1247,7 @@ var sampleData = {
         "id": "25663923"
     },
     "likes": {
-        "count": faker.random.number({min: 0, max: 100000})
+        "count": faker.random.number({min: 0, max: 100})
     },
     "link": faker.internet.url()+'/'+faker.random.number(1000000),
     "user": {
@@ -1299,7 +1299,7 @@ var sampleData = {
         "id": "25663923"
     },
     "likes": {
-        "count": faker.random.number({min: 0, max: 100000})
+        "count": faker.random.number({min: 0, max: 100})
     },
     "link": faker.internet.url()+'/'+faker.random.number(1000000),
     "user": {
