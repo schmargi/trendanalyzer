@@ -60,7 +60,13 @@ router.get('/', function (req, res) {
     return new Tag(tag, false, fittingPosts);
   }).filter(tag => tag.posts.length > 0)
     .sort(function(lhs, rhs) {
-      return rhs.posts.length - lhs.posts.length;
+      if (lhs.posts.length > rhs.posts.length) {
+        return -1;
+      }
+      if (lhs.posts.length < rhs.posts.length) {
+        return +1;
+      }
+      return 0;
   });
   res.status(200).send({tags: fittingTags});
 });
