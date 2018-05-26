@@ -1,0 +1,67 @@
+// Typography
+$light-font-family: RobotoLight, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$regular-font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$base-font-family: $regular-font-family;
+$heading-font-family: $base-font-family;
+
+$brand-color: #9ac017;
+$primary: $brand-color;
+$brand-primary: $brand-color;
+$green: $brand-color;
+
+
+// Font Sizes
+$base-font-size: 1rem;
+
+// Line height
+$base-line-height: 1.6;
+$heading-line-height: 1.3;
+
+// global spacing
+$global-spacing: 40px;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$dark-gray: #333;
+$text-gray: #444;
+$medium-gray: #999;
+$light-gray: #ddd;
+$white-color: #fff;
+
+// Font Colors
+$base-font-color: $text-gray;
+$headline-font-color: $dark-gray;
+$action-color: $dark-gray;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+
+$header-top-margin: 1.6rem;
+$header-bottom-margin: 1.0rem;
+
+$body-bg: #fff;
+$body-font-color: #333;
+$header-font-color: #333;
+
+// Media Query
+$tablet: "(min-width: 720px) and (max-width: 1199px)";
+$desktop: "(min-width: 1200px)";

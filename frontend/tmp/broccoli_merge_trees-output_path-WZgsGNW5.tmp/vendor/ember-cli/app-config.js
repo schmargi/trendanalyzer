@@ -1,1 +1,0 @@
-/Users/maike/dev/trendanalyzer/frontend/tmp/config_replace-output_path-dP4KkQOZ.tmp/app-config.js

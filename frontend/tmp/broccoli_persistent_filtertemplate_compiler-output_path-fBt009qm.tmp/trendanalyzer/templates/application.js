@@ -1,1 +1,0 @@
-export default Ember.HTMLBars.template({"id":"Lr4altyD","block":"{\"symbols\":[],\"statements\":[[6,\"h1\"],[8],[0,\"trendanalyzer\"],[9]],\"hasEval\":false}","meta":{"moduleName":"trendanalyzer/templates/application.hbs"}});

@@ -1,8 +1,11 @@
 'use strict';
 
 module.exports = function(environment) {
+  let apiHost = 'http://localhost:3000';
+
   let ENV = {
     modulePrefix: 'trendanalyzer',
+    apiHost: apiHost,
     environment,
     rootURL: '/',
     locationType: 'auto',

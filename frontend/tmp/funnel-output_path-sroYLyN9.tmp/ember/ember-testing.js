@@ -1,1 +1,0 @@
-/Users/maike/dev/trendanalyzer/frontend/tmp/funnel-input_base_path-rZ7roFsa.tmp/ember-testing.js
