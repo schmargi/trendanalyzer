@@ -1,40 +1,57 @@
 h1 Meine tollen Trends
 
 = each model as |tag|
-  h1
-    |#
-    = tag.title
-  = line-chart data=tag.mydata options=tag.myoptions
-  = each tag.posts as |post|
-    h5 = post.text
+  h5
+    = link-to 'tag' tag.title
+      |#
+      = tag.title
+  p
+    |Posts:&nbsp;
+    = tag.postCount
+
+  = if tag.hasTwitter
     p
-      |von &nbsp;
-      = post.user_name
-      | &nbsp; in &nbsp;
-      = post.city
+      = fa-icon 'twitter'
+  = if tag.hasInstagram
     p
-      = fa-icon 'thumbs-up'
-      |&nbsp;
-      = post.like_count
+      = fa-icon 'instagram'
 
-    = if post.isTwitter
-      p
-        = fa-icon 'twitter'
-        |&nbsp;
-        = post.origin
+  p
+    = tag.likeCountSum
 
-    = else
-      p
-        = fa-icon 'instagram'
-        |&nbsp;
-        = post.origin
+  p
+    = tag.retweetCountSum
 
-
-    = if post.isImage
-      h1
-        = post.media_type
-      img alt="Brand" src=post.media_url
-    = if post.isVideo
-      h1
-        = post.media_type
-      video alt="Brand" src=post.media_url
+  / = each tag.posts as |post|
+  /   h5 = post.text
+  /   p
+  /     |von &nbsp;
+  /     = post.user_name
+  /     | &nbsp; in &nbsp;
+  /     = post.city
+  /   p
+  /     = fa-icon 'thumbs-up'
+  /     |&nbsp;
+  /     = post.like_count
+  /
+  /   = if post.isTwitter
+  /     p
+  /       = fa-icon 'twitter'
+  /       |&nbsp;
+  /       = post.origin
+  /
+  /   = else
+  /     p
+  /       = fa-icon 'instagram'
+  /       |&nbsp;
+  /       = post.origin
+  /
+  /
+  /   = if post.isImage
+  /     h1
+  /       = post.media_type
+  /     img alt="Brand" src=post.media_url
+  /   = if post.isVideo
+  /     h1
+  /       = post.media_type
+  /     video alt="Brand" src=post.media_url
