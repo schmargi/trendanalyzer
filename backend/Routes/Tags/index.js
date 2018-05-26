@@ -104,6 +104,8 @@ var postsForTags = function(tags, location, sortBy) {
     var score = 0;
     var retweet_count = 0;
     var like_count = 0;
+    var contains_twitter = false;
+    var contains_instagram = false;
     var fittingPosts = posts.filter(post => {
       return post.tags.includes(tag.name) && post.city == location
     });
@@ -113,8 +115,14 @@ var postsForTags = function(tags, location, sortBy) {
       score = score + post.retweet_count * 0.5;
       retweet_count += post.retweet_count;
       like_count += post.like_count;
+      if (post.origin == "TWITTER") {
+        contains_twitter = true;
+      }
+      if (post.origin == "INSTAGRAM") {
+        contains_instagram = true;
+      }
     });
-    return new Tag(tag.id, tag.name, false, fittingPosts, score, fittingPosts.length, retweet_count, like_count);
+    return new Tag(tag.id, tag.name, false, fittingPosts, score, fittingPosts.length, retweet_count, like_count, contains_twitter, contains_instagram);
   }).filter(tag => tag.posts.length > 0)
 
   if (sortBy == "post_count") {

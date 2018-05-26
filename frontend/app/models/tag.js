@@ -11,6 +11,8 @@ export default DS.Model.extend({
   retweet_count:   DS.attr('number'),
   like_count:      DS.attr('number'),
   popularity:      DS.attr('number'),
+  contains_twitter:   DS.attr('boolean'),
+  contains_instagram: DS.attr('boolean'),
 
   // likeCountSum:   computed('posts.like_count', function(){
   //   let posts = this.get('posts').mapBy('like_count');
@@ -31,15 +33,7 @@ export default DS.Model.extend({
   //   return sum;
   // }),
 
-  hasTwitter:     computed('posts.origin', function(){
-    let posts = this.get('posts').mapBy('origin');
-    return posts.indexOf("TWITTER") > -1;
-  }),
 
-  hasInstagram:     computed('posts.origin', function(){
-    let posts = this.get('posts').mapBy('origin');
-    return posts.indexOf("INSTAGRAM") > -1;
-  }),
 
   mydata:        computed('postCount', function(){
     return [
