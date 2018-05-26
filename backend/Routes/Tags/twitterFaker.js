@@ -57,7 +57,7 @@ var fake = function() {
                                   "urls": [
                                           {
                                                   "url": "https://t.co/FjPEWnh804",
-                                                  "expanded_url": "https://twitter.com/i/web/status/967824267948773377",
+                                                  "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000),
                                                   "display_url": "twitter.com/i/web/status/9…",
                                                   "indices": [
                                                           117,
@@ -200,7 +200,7 @@ var fake = function() {
                                   "urls": [
                                           {
                                                   "url": "https://t.co/29dZgga54m",
-                                                  "expanded_url": "https://twitter.com/i/web/status/967844427480911872",
+                                                  "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000),
                                                   "display_url": "twitter.com/i/web/status/9…",
                                                   "indices": [
                                                           117,
@@ -343,7 +343,7 @@ var fake = function() {
                                   "urls": [
                                           {
                                                   "url": "https://t.co/SUX30Y45mr",
-                                                  "expanded_url": "https://twitter.com/i/web/status/968204446625869827",
+                                                  "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000),
                                                   "display_url": "twitter.com/i/web/status/9…",
                                                   "indices": [
                                                           117,
@@ -486,7 +486,7 @@ var fake = function() {
                                   "urls": [
                                           {
                                                   "url": "https://t.co/2CYoPV6Aqx",
-                                                  "expanded_url": "https://twitter.com/i/web/status/968013469743288321",
+                                                  "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000),
                                                   "display_url": "twitter.com/i/web/status/9…",
                                                   "indices": [
                                                           117,
@@ -629,7 +629,7 @@ var fake = function() {
                                   "urls": [
                                           {
                                                   "url": "https://t.co/vz4SnPupe2",
-                                                  "expanded_url": "https://twitter.com/i/web/status/967928974960545793",
+                                                  "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000),
                                                   "display_url": "twitter.com/i/web/status/9…",
                                                   "indices": [
                                                           116,
@@ -772,7 +772,7 @@ var fake = function() {
                                   "urls": [
                                           {
                                                   "url": "https://t.co/vz4SnPupe2",
-                                                  "expanded_url": "https://twitter.com/i/web/status/967928974960545793",
+                                                  "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000),
                                                   "display_url": "twitter.com/i/web/status/9…",
                                                   "indices": [
                                                           116,
@@ -915,7 +915,7 @@ var fake = function() {
                                 "urls": [
                                         {
                                                 "url": "https://t.co/vz4SnPupe2",
-                                                "expanded_url": "https://twitter.com/i/web/status/967928974960545793",
+                                                "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000),
                                                 "display_url": "twitter.com/i/web/status/9…",
                                                 "indices": [
                                                         116,
