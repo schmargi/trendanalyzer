@@ -9,7 +9,6 @@ var Tag = require('./tag');
 
 router.use(bodyParser.json());
 
-router.get('/', function (req, res) {
   var tags = [];
 
 
@@ -55,6 +54,9 @@ router.get('/', function (req, res) {
     });
     return new Tag(tag, false, fittingPosts);
   });
+
+router.get('/', function (req, res) {
+
   res.status(200).send({tags: tags});
 });
 

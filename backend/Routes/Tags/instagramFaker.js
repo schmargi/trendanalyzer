@@ -7,7 +7,7 @@ var fake = function() {
     "type": "image",
     "images": {
       "standard_resolution": {
-        "url": faker.image.cats()
+        "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123)
       }
     },
     "user": {
@@ -19,8 +19,9 @@ var fake = function() {
     "caption": {
       "text": faker.random.words(8)
     },
-    "created_time": faker.random.number(1200000000),
-    "tags": [faker.random.word(), faker.random.word()]
+    "created_time": moment().subtract(faker.random.number({min: 0, max: 60}, 'minutes')).unix(),
+    "tags": [faker.random.word(), faker.random.word()],
+    "link": faker.internet.url()+'/'+faker.random.number(1000000),
   };
 };
 
@@ -44,7 +45,7 @@ var sampleData = {
         "likes": {
             "count": 35
         },
-        "link": "http://instagr.am/p/BUS3X/",
+        "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
             "username": "josh",
             "profile_picture": "...",
@@ -63,7 +64,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 612,
                 "height": 612
             }
@@ -86,7 +87,7 @@ var sampleData = {
                 "height": 480
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 640,
                 "height": 640
             }
@@ -101,7 +102,7 @@ var sampleData = {
         "likes": {
             "count": 1
         },
-        "link": "http://instagr.am/p/D/",
+        "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
             "username": "kevin",
         },
@@ -118,7 +119,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 612,
                 "height": 612
             }
@@ -150,7 +151,7 @@ var sampleData = {
         "likes": {
             "count": 35
         },
-        "link": "http://instagr.am/p/BUS3X/",
+        "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
             "username": "codingLover69",
             "profile_picture": "...",
@@ -169,7 +170,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 612,
                 "height": 612
             }
@@ -192,7 +193,7 @@ var sampleData = {
                 "height": 480
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 640,
                 "height": 640
             }
@@ -207,7 +208,7 @@ var sampleData = {
         "likes": {
             "count": 1
         },
-        "link": "http://instagr.am/p/D/",
+        "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
             "username": "kevin",
         },
@@ -224,7 +225,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 612,
                 "height": 612
             }
@@ -256,7 +257,7 @@ var sampleData = {
         "likes": {
             "count": 35
         },
-        "link": "http://instagr.am/p/BUS3X/",
+        "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
             "username": "josh",
             "profile_picture": "...",
@@ -275,7 +276,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 612,
                 "height": 612
             }
@@ -298,7 +299,7 @@ var sampleData = {
                 "height": 480
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 640,
                 "height": 640
             }
@@ -313,7 +314,7 @@ var sampleData = {
         "likes": {
             "count": 1
         },
-        "link": "http://instagr.am/p/D/",
+        "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
             "username": "kevin",
         },
@@ -330,7 +331,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 612,
                 "height": 612
             }
@@ -362,7 +363,7 @@ var sampleData = {
         "likes": {
             "count": 35
         },
-        "link": "http://instagr.am/p/BUS3X/",
+        "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
             "username": "josh",
             "profile_picture": "...",
@@ -381,7 +382,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 612,
                 "height": 612
             }
@@ -419,7 +420,7 @@ var sampleData = {
         "likes": {
             "count": 1
         },
-        "link": "http://instagr.am/p/D/",
+        "link": faker.internet.url()+'/'+faker.random.number(1000000),
         "user": {
             "username": "kevin",
         },
@@ -436,7 +437,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": faker.image.cats(),
+                "url": faker.image.cats()+'/'+faker.lorem.word()+faker.random.number(10012039123),
                 "width": 612,
                 "height": 612
             }
