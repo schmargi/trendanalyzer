@@ -1987,6 +1987,43 @@ var sampleData = {
         "longitude": -122.3948632,
         "name": "Regensburg"
     }
+},
+{
+    "type": "image",
+    "tags": ["LamasInPyjamas"],
+    "caption": {
+        "created_time": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').unix(),
+        "text":  "Oh mein gott Leute! Stellt euch diesen Pyjama mal an einem Lama vor. Ich sterbe. #LamasInPyjamas",
+        "from": {
+            "username": "LamaLover",
+        },
+        "id": "25663923"
+    },
+    "likes": {
+        "count": faker.random.number({min: 0, max: 50})
+    },
+    "link": faker.internet.url()+'/'+faker.random.number(1000000),
+    "user": {
+        "username": "LamaLover",
+        "profile_picture": "...",
+        "id": "33"
+    },
+    "created_time": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').unix(),
+    "images": {
+        "standard_resolution": {
+            "url": "https://c1.staticflickr.com/9/8096/8556359197_2db337c307_b.jpg",
+            "width": 612,
+            "height": 612
+        }
+    },
+    "user_has_liked": false,
+    "id": "22097367",
+    "location": {
+        "latitude": 37.780885099999999,
+        "id": "222175378",
+        "longitude": -122.3948632,
+        "name": "Regensburg"
+    }
 }
 
 

@@ -1087,6 +1087,282 @@ var fake = function() {
               "favorite_count": faker.random.number({min: 0, max: 50}),
               "retweet_count": faker.random.number({min: 0, max: 20})
             },
+            {
+              "text": "Die #Maidult ist auch nicht mehr das was sie mal war. Alles Kommerz.",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Maidult"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "McLovin",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Also diese Taschenkontrollen nerven ja mal aufs übelste oder? Was soll das? #Maidult",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Maidult"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "JensMarker",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Keine Parkplätze weit und breit. Das ist so nervig! Ich will doch nur trainieren. #Maidult",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Maidult"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "LollaStolla",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Heute Abend die gongfm Band auf der Dult! Das ist jedes Jahr mein Highlight definitv. #Maidult",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Maidult"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "LostInHisEyes",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Gongfm band heute Abend auf der #Maidult. Der Abriss war nicht von dieser Welt!",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Maidult"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "Tanzcafe",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Das DultTV ist so witzig. #Maidult",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Maidult"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "SoeldnerMaike",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Das Breakdance ist doch dieses Jahr krasser als sonst, oder Leute?! #Maidult",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Maidult"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "SvenMdenSpeck",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Crepes, Eis, Wurstsemmel,.. hallo #Maidult - tschüss Bikini!",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Maidult"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "BirteRocks",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Mein Schatz hat mir ein Lebkuchenherz gekauft. Jetzt weiß ich, dass diese Liebe echt ist. #Maidult",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Maidult"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "BrechtBerhtold",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Dirndl oder Hose. Was soll ich nur tun? #Maidult",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "Maidult"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "IndecisiveBitch123",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+            {
+              "text": "Lamas sind einfach mein Leben. Würde ich jeder Zeit na hübschen Frau vorziehen. #LamasInPyjamas",
+              "entities": {
+                "hashtags": [
+                  {
+                    "text": "LamasInPyjamas"
+                  }
+                ],
+                "urls": [
+                  {
+                    "expanded_url": faker.image.cats()+"/"+faker.lorem.word() + faker.random.number(200000000000000)
+                  }
+                ]
+              },
+              "place": {
+                "name": "Regensburg"
+              },
+              "created_at": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').format('ddd MMM DD hh:mm:ss Z YYYY'),
+              "user": {
+                "name": "LackiLuk",
+                "followers_count": faker.random.number({min: 0, max: 300}),
+              },
+              "favorite_count": faker.random.number({min: 0, max: 50}),
+              "retweet_count": faker.random.number({min: 0, max: 20})
+            },
+
 
           ],
           "search_metadata": {
