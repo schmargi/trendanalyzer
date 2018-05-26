@@ -75,7 +75,7 @@ var sampleData = {
             "latitude": 37.780885099999999,
             "id": "222175378",
             "longitude": -122.3948632,
-            "name": "Instagram"
+            "name": "Regensburg"
         }
     },
     {
@@ -129,7 +129,7 @@ var sampleData = {
             "latitude": 37.780885099999999,
             "id": "222175378",
             "longitude": -122.3948632,
-            "name": "Instagram"
+            "name": "Regensburg"
         }
     },
     {
@@ -181,7 +181,7 @@ var sampleData = {
             "latitude": 37.780885099999999,
             "id": "222175378",
             "longitude": -122.3948632,
-            "name": "Instagram"
+            "name": "Regensburg"
         }
     },
     {
@@ -235,7 +235,7 @@ var sampleData = {
             "latitude": 37.780885099999999,
             "id": "222175378",
             "longitude": -122.3948632,
-            "name": "Instagram"
+            "name": "Regensburg"
         }
     },
     {
@@ -287,7 +287,7 @@ var sampleData = {
             "latitude": 37.780885099999999,
             "id": "222175378",
             "longitude": -122.3948632,
-            "name": "Instagram"
+            "name": "Regensburg"
         }
     },
     {
@@ -341,7 +341,7 @@ var sampleData = {
             "latitude": 37.780885099999999,
             "id": "222175378",
             "longitude": -122.3948632,
-            "name": "Instagram"
+            "name": "Regensburg"
         }
     },
     {
@@ -393,7 +393,7 @@ var sampleData = {
             "latitude": 37.780885099999999,
             "id": "222175378",
             "longitude": -122.3948632,
-            "name": "Instagram"
+            "name": "Regensburg"
         }
     },
     {
@@ -447,7 +447,7 @@ var sampleData = {
             "latitude": 37.780885099999999,
             "id": "222175378",
             "longitude": -122.3948632,
-            "name": "Instagram"
+            "name": "Regensburg"
         }
     },
     {
@@ -488,7 +488,7 @@ var sampleData = {
                 "height": 150
             },
             "standard_resolution": {
-                "url": "https://cdn.pixabay.com/photo/2017/10/17/06/10/reading-2859651_960_720.jpg",
+                "url": "https://c1.staticflickr.com/6/5663/30551885913_41d55a6f75_b.jpg",
                 "width": 612,
                 "height": 612
             }
@@ -499,7 +499,7 @@ var sampleData = {
             "latitude": 37.780885099999999,
             "id": "222175378",
             "longitude": -122.3948632,
-            "name": "Instagram"
+            "name": "Regensburg"
         }
     },
     {
@@ -540,7 +540,7 @@ var sampleData = {
               "height": 150
           },
           "standard_resolution": {
-              "url": "https://cdn.pixabay.com/photo/2017/08/01/17/00/people-2566677_960_720.jpg",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Duke_Kahanamoku_Newspaper_Page.jpg",
               "width": 612,
               "height": 612
           }
@@ -551,7 +551,7 @@ var sampleData = {
           "latitude": 37.780885099999999,
           "id": "222175378",
           "longitude": -122.3948632,
-          "name": "Instagram"
+          "name": "Regensburg"
       }
   },
   {
@@ -592,7 +592,7 @@ var sampleData = {
             "height": 150
         },
         "standard_resolution": {
-            "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYoCGcWALhJHKOQmDQVdHoK68tL4eqjQ2fAsCzb5fcbFRKPB5G",
+            "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Bouquin_%C3%A9lectronique_iLiad_en_plein_soleil.jpg",
             "width": 612,
             "height": 612
         }
@@ -603,7 +603,7 @@ var sampleData = {
         "latitude": 37.780885099999999,
         "id": "222175378",
         "longitude": -122.3948632,
-        "name": "Instagram"
+        "name": "Regensburg"
     }
 },
 {
@@ -655,7 +655,7 @@ var sampleData = {
         "latitude": 37.780885099999999,
         "id": "222175378",
         "longitude": -122.3948632,
-        "name": "Instagram"
+        "name": "Regensburg"
     }
 },
 {
@@ -707,7 +707,7 @@ var sampleData = {
         "latitude": 37.780885099999999,
         "id": "222175378",
         "longitude": -122.3948632,
-        "name": "Instagram"
+        "name": "München"
     }
 },
 {
@@ -759,7 +759,7 @@ var sampleData = {
         "latitude": 37.780885099999999,
         "id": "222175378",
         "longitude": -122.3948632,
-        "name": "Instagram"
+        "name": "München"
     }
 },
 {
@@ -811,7 +811,7 @@ var sampleData = {
         "latitude": 37.780885099999999,
         "id": "222175378",
         "longitude": -122.3948632,
-        "name": "Instagram"
+        "name": "München"
     }
 },
 {
@@ -852,7 +852,7 @@ var sampleData = {
             "height": 150
         },
         "standard_resolution": {
-            "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Spider-Firework-Omiya-Japan.jpg",
+            "url": "https://fthmb.tqn.com/X76cp2KLew1NOPV9uQFddvWL90Q=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/low-angle-view-of-firework-display-over-river-during-sunset-604213021-57752e7b3df78cb62c11aba4.jpg",
             "width": 612,
             "height": 612
         }
@@ -863,7 +863,7 @@ var sampleData = {
         "latitude": 37.780885099999999,
         "id": "222175378",
         "longitude": -122.3948632,
-        "name": "Instagram"
+        "name": "Regensburg"
     }
 },
 {
@@ -915,7 +915,7 @@ var sampleData = {
         "latitude": 37.780885099999999,
         "id": "222175378",
         "longitude": -122.3948632,
-        "name": "Instagram"
+        "name": "Regensburg"
     }
 },
 {
@@ -956,7 +956,7 @@ var sampleData = {
             "height": 150
         },
         "standard_resolution": {
-            "url": "https://cdn.pixabay.com/photo/2016/10/10/19/04/fair-1729603_960_720.jpg",
+            "url": "http://www.tampabay.com/storyimage/HI/20170207/ARTICLE/302079454/AR/0/AR-302079454.jpg",
             "width": 612,
             "height": 612
         }
@@ -967,7 +967,7 @@ var sampleData = {
         "latitude": 37.780885099999999,
         "id": "222175378",
         "longitude": -122.3948632,
-        "name": "Instagram"
+        "name": "Regensburg"
     }
 },
 {
@@ -1008,7 +1008,7 @@ var sampleData = {
             "height": 150
         },
         "standard_resolution": {
-            "url": "https://cdn.pixabay.com/photo/2017/03/25/19/20/fun-fair-2174258_960_720.jpg",
+            "url": "https://ais.badische-zeitung.de/piece/03/25/70/57/52785239-h-720.jpg",
             "width": 612,
             "height": 612
         }
@@ -1019,7 +1019,7 @@ var sampleData = {
         "latitude": 37.780885099999999,
         "id": "222175378",
         "longitude": -122.3948632,
-        "name": "Instagram"
+        "name": "Regensburg"
     }
 },
 {
@@ -1060,7 +1060,7 @@ var sampleData = {
             "height": 150
         },
         "standard_resolution": {
-            "url": "https://cdn.pixabay.com/photo/2016/08/03/15/47/oktoberfest-1567038_960_720.jpg",
+            "url": "https://static1.squarespace.com/static/555a4661e4b04d1c6549a89c/t/555a6910e4b09f906401840d/1431988496457/fair+background.jpg?format=1500w",
             "width": 612,
             "height": 612
         }
@@ -1071,20 +1071,20 @@ var sampleData = {
         "latitude": 37.780885099999999,
         "id": "222175378",
         "longitude": -122.3948632,
-        "name": "Instagram"
+        "name": "Regensburg"
     }
 },
 {
     "type": "image",
     "users_in_photo": [],
     "filter": "Earlybird",
-    "tags": ["Maidult", "Fisch", "teuer", "geil"],
+    "tags": ["Maidult", "Fisch"],
     "comments": {
         "count": 0
     },
     "caption": {
         "created_time": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').unix(),
-        "text": "Wenn du #Fisch essen willst, geh nicht auf die #Maidult. #teuer aber #geil.",
+        "text": "Wenn du #Fisch essen willst, geh nicht auf die #Maidult. Teuer aber geil.",
         "from": {
             "username": "SebastianCatLover",
         },
@@ -1123,7 +1123,7 @@ var sampleData = {
         "latitude": 37.780885099999999,
         "id": "222175378",
         "longitude": -122.3948632,
-        "name": "Instagram"
+        "name": "Regensburg"
     }
 },
 {
@@ -1138,7 +1138,7 @@ var sampleData = {
         "created_time": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').unix(),
         "text": "Es gibt nichts schöneres als weiße Lamas. Obwohl.. es wäre toll, wenn sie Pyjamas anhaben würden.. #LamasInPyjamas",
         "from": {
-            "username": "LenaFischeringer",
+            "username": "MaikeSchmargendor",
         },
         "id": "25663923"
     },
@@ -1147,7 +1147,7 @@ var sampleData = {
     },
     "link": faker.internet.url()+'/'+faker.random.number(1000000),
     "user": {
-        "username": "LenaFischeringer",
+        "username": "MaikeSchmargendorf",
         "profile_picture": "...",
         "id": "33"
     },
@@ -1164,7 +1164,7 @@ var sampleData = {
             "height": 150
         },
         "standard_resolution": {
-            "url": "https://cdn.pixabay.com/photo/2017/12/03/18/55/lama-head-lama-2995557_960_720.jpg",
+            "url": "https://scontent-frx5-1.xx.fbcdn.net/v/t31.0-8/11080582_811989972172224_2808133893141369046_o.jpg?_nc_cat=0&oh=fe61da3a220611603325df4fa074ad92&oe=5B84B426",
             "width": 612,
             "height": 612
         }
@@ -1175,7 +1175,7 @@ var sampleData = {
         "latitude": 37.780885099999999,
         "id": "222175378",
         "longitude": -122.3948632,
-        "name": "Instagram"
+        "name": "München"
     }
 },
 {
@@ -1227,20 +1227,20 @@ var sampleData = {
         "latitude": 37.780885099999999,
         "id": "222175378",
         "longitude": -122.3948632,
-        "name": "Instagram"
+        "name": "München"
     }
 },
 {
     "type": "image",
     "users_in_photo": [],
     "filter": "Earlybird",
-    "tags": ["LamasInPyjamas", "SoSüß", "iLoveLamas"],
+    "tags": ["LamasInPyjamas", "SoSüß"],
     "comments": {
         "count": 0
     },
     "caption": {
         "created_time": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').unix(),
-        "text": "#LamasInPyjamas oh Gott #SoSüß. #iLoveLamas ",
+        "text": "#LamasInPyjamas oh Gott #SoSüß. I love lamas!",
         "from": {
             "username": "LuluBecker",
         },
@@ -1279,20 +1279,20 @@ var sampleData = {
         "latitude": 37.780885099999999,
         "id": "222175378",
         "longitude": -122.3948632,
-        "name": "Instagram"
+        "name": "München"
     }
 },
 {
     "type": "image",
     "users_in_photo": [],
     "filter": "Earlybird",
-    "tags": ["LamasInPyjamas", "Lollipop", "Fisch"],
+    "tags": ["LamasInPyjamas", "Fisch"],
     "comments": {
         "count": 0
     },
     "caption": {
         "created_time": moment().subtract(faker.random.number({min: 0, max: 4320}), 'minutes').unix(),
-        "text": "Stell dir mal vor ein Lama würde einen #Fisch essen. Oder einen #Lollipop. Das wäre echt strange. Aber nicht so strange wie #LamasInPyjamas",
+        "text": "Stell dir mal vor ein Lama würde einen #Fisch essen. Oder einen Lollipop. Das wäre echt strange. Aber nicht so strange wie #LamasInPyjamas",
         "from": {
             "username": "MareikeLovesFish",
         },
@@ -1331,7 +1331,7 @@ var sampleData = {
         "latitude": 37.780885099999999,
         "id": "222175378",
         "longitude": -122.3948632,
-        "name": "Instagram"
+        "name": "München"
     }
 }
 

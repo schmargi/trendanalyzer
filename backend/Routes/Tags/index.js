@@ -34,7 +34,17 @@ router.use(bodyParser.json());
       text = item.caption.text;
     }
 
-    return new Post(text, item.link, item.tags, item.created_time, "Regensburg", {"name": item.user.username, "followers_count": 0}, "INSTAGRAM", {"type": item.type, "url": url}, item.likes.count, 0, false);
+    var location = "";
+    if (item.location == undefined) {
+      location = "Regensburg"
+    } else {
+      location = item.location.name;
+
+    }
+    console.log(location);
+
+
+    return new Post(text, item.link, item.tags, item.created_time, location, {"name": item.user.username, "followers_count": 0}, "INSTAGRAM", {"type": item.type, "url": url}, item.likes.count, 0, false);
   });
 
   var twitterPosts = twitterFaker.sampleData.statuses.map( item => {
@@ -55,7 +65,6 @@ router.get('/', function (req, res) {
 
   var fittingTags = tags.map(tag => {
     var score = 0;
-    console.log(score);
     var fittingPosts = posts.filter(post => {
       return post.tags.includes(tag) && post.city == location
     });
@@ -64,9 +73,6 @@ router.get('/', function (req, res) {
       score = score + post.like_count * 0.01;
       score = score + post.retweet_count * 0.5;
     });
-
-
-    console.log(score);
     return new Tag(tag, false, fittingPosts, score);
   }).filter(tag => tag.posts.length > 0)
     .sort(function(lhs, rhs) {

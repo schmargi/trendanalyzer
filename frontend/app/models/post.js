@@ -29,7 +29,7 @@ export default DS.Model.extend({
   }),
 
   noMedia:        computed('isImage', 'isVideo', function(){
-    return this.get('isImage') || this.get('isVideo');
+    return !this.get('isImage') && !this.get('isVideo');
   }),
 
 });
