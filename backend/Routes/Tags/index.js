@@ -40,7 +40,7 @@ router.use(bodyParser.json());
   var twitterPosts = twitterFaker.sampleData.statuses.map( item => {
     var hashtags = item.entities.hashtags.map(hashtag =>  hashtag.text);
     tags.push(...hashtags);
-    return new Post(item.text, item.entities.urls[0].expanded_url, hashtags, item.created_at, "Regensburg", {"name": item.user.name, "followers_count": item.followers_count}, "TWITTER", null, item.favorite_count, item.retweet_count, false);
+    return new Post(item.text, item.entities.urls[0].expanded_url, hashtags, item.created_at, item.place.name, {"name": item.user.name, "followers_count": item.followers_count}, "TWITTER", null, item.favorite_count, item.retweet_count, false);
   });
 
   tags = _.uniq(tags);
