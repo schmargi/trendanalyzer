@@ -3,7 +3,10 @@ module.exports = class Tag {
     retweet_count, like_count, contains_twitter, contains_instagram,
     today_like_count, today_retweet_count, today_post_count,
     yesterday_like_count, yesterday_retweet_count, yesterday_post_count,
-    presterday_like_count, presterday_retweet_count, presterday_post_count) {
+    presterday_like_count, presterday_retweet_count, presterday_post_count,
+    one_before_presterday_like_count, one_before_presterday_retweet_count, one_before_presterday_post_count,
+    two_before_presterday_like_count, two_before_presterday_retweet_count, two_before_presterday_post_count,
+  ) {
     this.id = id;
     this.title = title;
     this.is_favorite = is_favorite;
@@ -25,5 +28,11 @@ module.exports = class Tag {
     this.presterday_like_count = presterday_like_count;
     this.presterday_retweet_count = presterday_retweet_count;
     this.presterday_post_count = presterday_post_count
+    this.one_before_presterday_like_count = one_before_presterday_like_count;
+    this.one_before_presterday_retweet_count = one_before_presterday_retweet_count;
+    this.one_before_presterday_post_count = one_before_presterday_post_count;
+    this.two_before_presterday_like_count = two_before_presterday_like_count;
+    this.two_before_presterday_retweet_count = two_before_presterday_retweet_count;
+    this.two_before_presterday_post_count = two_before_presterday_post_count;
   }
 }
