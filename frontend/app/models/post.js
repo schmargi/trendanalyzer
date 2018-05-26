@@ -21,15 +21,15 @@ export default DS.Model.extend({
     return this.get('origin') == 'TWITTER';
   }),
 
-  isImage:        Ember.computed('media_type', function(){
+  isImage:        computed('media_type', function(){
     return this.get('media_type') == 'image';
   }),
-  isVideo:        Ember.computed('media_type', function(){
+  isVideo:        computed('media_type', function(){
     return this.get('media_type') == 'video';
   }),
 
-  noMedia:        Ember.computed('isImage', 'isVideo', function(){
-    return this.get('isImage') || this.get('isVideo');
+  noMedia:        computed('isImage', 'isVideo', function(){
+    return !this.get('isImage') && !this.get('isVideo');
   }),
 
 });
