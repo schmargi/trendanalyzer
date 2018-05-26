@@ -94,7 +94,7 @@ var sampleData = {
           },
         "users_in_photo": null,
         "filter": "Vesper",
-        "tags": ['Hackaburg2018','catlol', 'maike_is_cute_af'],
+        "tags": ['Hackaburg2018','catlol'],
         "comments": {
             "count": 2
         },
@@ -136,7 +136,7 @@ var sampleData = {
         "type": "image",
         "users_in_photo": [],
         "filter": "Earlybird",
-        "tags": ["expobar", "Hackaburg2018", "thestruggleisreal"],
+        "tags": ["expobar", "Hackaburg2018"],
         "comments": {
             "count": 0
         },
