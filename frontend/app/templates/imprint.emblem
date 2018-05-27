@@ -1,1 +1,37 @@
-h1 Imprint
+.container
+  .row
+    .col-lg-4
+      h1 Imprint
+      p.mt4 Team #swagpantz
+      | Franz-Mayer-Straße 1
+      br
+      | 93053 Regensburg
+      br
+      | Germany
+      p
+        a.mail href="mailto:maxi.windl@webforuse.de"  info@swagpantz.de
+
+    .col-lg-8
+      .row
+        .col-lg-4
+          img.avatar alt="Brand" src="%PUBLIC_URL%/../../assets/avatar_mwin.png"
+        .col-lg-4
+          img.avatar alt="Brand" src="%PUBLIC_URL%/../../assets/avatar_msch.png"
+        .col-lg-4
+          img.avatar alt="Brand" src="%PUBLIC_URL%/../../assets/avatar_hsch.png"
+      .row.mt6.mb6
+        .col-lg-4.center
+
+          a.grey href="mailto:mwin@num42.de"
+        .col-lg-4.center
+
+          a.grey href="mailto:msch@num42.de"
+        .col-lg-4.center
+
+          a.grey href="mailto:hsch@num42.de"
+
+.container
+  .row.mb5
+    .col-lg-12
+     p.mb3
+     | Responsible for any content on this page in accordance with paragraph § 55 section 2 RStV: Maximiliane Windl, Maike Schmargendorf and Hans-Martin Schuller (Franz-Mayer-Straße 1, 93053 Regensburg)
