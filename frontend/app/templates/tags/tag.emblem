@@ -21,88 +21,13 @@ h3
       = line-chart data=model.data_like_count options=model.like_options
     .col-lg-4
       = line-chart data=model.data_retweet_count options=model.retweet_options
-
 .container
   .row
-    = each model.posts as |post|
-      = if post.isImage
-        .col-lg-4.col-md-3.col-sm-2.mb3
-          .card
-            img.card-img.card-img-top alt="Card image cap" src=post.media_url
-            .card-body
-              = if post.isTwitter
-                p.badge.badge-primary.twitter
-                  = fa-icon 'twitter'
-                  |&nbsp;&nbsp;
-                  |Twitter
-              = else
-                p.badge.badge-primary.instagram
-                  = fa-icon 'instagram'
-                  |&nbsp;&nbsp;
-                  |Instagram
-              br
-              h5
-                |#
-                = model.title
-              p.card-text
-                = post.text
-              p
-                = fa-icon 'thumbs-up'
-                |&nbsp;
-                = post.like_count
-    = each model.posts as |post|
-      = if post.isVideo
-        .col-lg-4.col-md-3.col-sm-2.mb3
-          .card
-            = if post.is_mp4
-              video.card-mp4.card-mp4-top alt="Card image cap" src=post.media_url controls='play  '
-            = else
-              iframe.card-yt.card-yt-top src=post.media_url allow="encrypted-media" allowfullscreen=true
-            .card-body
-              = if post.isTwitter
-                p.badge.badge-primary.twitter
-                  = fa-icon 'twitter'
-                  |&nbsp;&nbsp;
-                  |Twitter
-              = else
-                p.badge.badge-primary.instagram
-                  = fa-icon 'instagram'
-                  |&nbsp;&nbsp;
-                  |Instagram
-              br
-              h5
-                |#
-                = model.title
-              p.card-text
-                = post.text
-              p
-                = fa-icon 'thumbs-up'
-                |&nbsp;
-                = post.like_count
+    .col-lg-12
+      .input-group.mb-3
+        .input-group-prepend
+          span#basic-addon1.input-group-text Post Search
+        = input class="form-control" aria-describedby="basic-addon1" type="text" id="query" value=query placeholder="search for posts"
 
-    = each model.posts as |post|
-      = if post.noMedia
-        = if post.text
-          .col-lg-4.col-md-3.col-sm-2.mb3
-            .card
-              .card-body
-                = if post.isTwitter
-                  p.badge.badge-primary.twitter
-                    = fa-icon 'twitter'
-                    |&nbsp;&nbsp;
-                    |Twitter
-                = else
-                  p.badge.badge-primary.instagram
-                    = fa-icon 'instagram'
-                    |&nbsp;&nbsp;
-                    |Instagram
-                br
-                h5
-                  |#
-                  = model.title
-                p.card-text
-                  = post.text
-                p
-                  = fa-icon 'thumbs-up'
-                  |&nbsp;
-                  = post.like_count
+
+= filterable-posts posts=filteredPosts
