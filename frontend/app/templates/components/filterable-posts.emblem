@@ -108,6 +108,14 @@
                   |-&nbsp;
                   = post.user_name
                 p
-                  = fa-icon 'thumbs-up'
-                  |&nbsp;
-                  = post.like_count
+                  span
+                    = fa-icon 'thumbs-up'
+                    |&nbsp;
+                    = post.like_count
+                  = if post.isTwitter
+                    span
+                      |&nbsp;&nbsp;&nbsp;
+                      = fa-icon 'retweet'
+                      |&nbsp;
+                      = post.retweet_count
+                      
