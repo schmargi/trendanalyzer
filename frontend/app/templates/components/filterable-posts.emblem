@@ -24,6 +24,10 @@
                 = post.tag.title
               p.small
                 = post.date
+                |&nbsp;-&nbsp;
+                = fa-icon 'map-marker'
+                |&nbsp;
+                = post.city
               p.card-text
                 = post.text
               p.font-italic  
@@ -58,6 +62,10 @@
                 = post.tag.title
               p.small
                 = post.date
+                |&nbsp;-&nbsp;
+                = fa-icon 'map-marker'
+                |&nbsp;
+                = post.city
               p.card-text
                 = post.text
               p.font-italic  
@@ -90,6 +98,10 @@
                   = post.tag.title
                 p.small
                   = post.date
+                  |&nbsp;-&nbsp;
+                  = fa-icon 'map-marker'
+                  |&nbsp;
+                  = post.city
                 p.card-text
                   = post.text
                 p.font-italic  

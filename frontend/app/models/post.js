@@ -21,9 +21,9 @@ export default DS.Model.extend({
     return "25. May 19:52 Uhr";
   }),
 
-  searchQuery:                  computed('text','origin', 'user_name', 'media_type', function(){
-    const { text, origin, user_name , media_type} = this.getProperties(['text','origin', 'user_name', 'media_type']);
-    return `${origin} ${text} ${origin} ${user_name} ${media_type}`;
+  searchQuery:                  computed('text','origin', 'user_name', 'media_type', 'city', function(){
+    const { text, origin, user_name , media_type, city} = this.getProperties(['text','origin', 'user_name', 'media_type', 'city']);
+    return `${origin} ${text} ${origin} ${user_name} ${media_type} ${city}`;
   }),
 
   is_mp4:           computed('media_url', function() {

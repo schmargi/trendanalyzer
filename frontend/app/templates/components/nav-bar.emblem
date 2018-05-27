@@ -6,7 +6,7 @@
       ul.navbar-nav
         = link-to "tags" tagName='li' class="nav-item"
           = link-to "tags" class="nav-link"
-            |&nbsp;&nbsp;Overview
+            |&nbsp;&nbsp;Home
 
       ul.navbar-nav.ml-auto
         = link-to "imprint" tagName='li' class="nav-item"
