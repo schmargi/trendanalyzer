@@ -1,27 +1,45 @@
-h5.mb3
-  = link-to 'tags'
-    |←&nbsp;back 
-h3  
-  |#
-  = model.title
-
-
 .container
-  .row.mt6.mb6
+  .row
+    .col-lg-12
+      h5.mb3
+        = link-to 'tags'
+          |←&nbsp;back 
+    .col-lg-12
+      h3  
+        |#
+        = model.title
+
+
+.container.mt6
+  .row
     .col-lg-4
       h5 Post Count
     .col-lg-4
       h5 Like Count
     .col-lg-4
       h5 Retweet Count
-  .row.mt6.mb6
+  .row
+    .col-lg-4
+      p 
+        |Today:&nbsp;  
+        =model.today_post_count
+    .col-lg-4
+      p 
+        |Today:&nbsp;
+        =model.today_like_count
+    .col-lg-4
+      p 
+        |Today:&nbsp;
+        =model.today_retweet_count
+  .row.mb6
     .col-lg-4
       = line-chart data=model.data_post_count options=model.post_options
     .col-lg-4
       = line-chart data=model.data_like_count options=model.like_options
     .col-lg-4
       = line-chart data=model.data_retweet_count options=model.retweet_options
-.container
+
+.container.mt10.mb6
   .row
     .col-lg-12
       .input-group.mb-3

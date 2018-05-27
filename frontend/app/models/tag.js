@@ -52,7 +52,7 @@ export default DS.Model.extend({
       [this.get('one_before_presterday'), this.get('one_before_presterday_post_count')],
       [this.get('presterday'), this.get('presterday_post_count')],
       [this.get('yesterday'), this.get('yesterday_post_count')],
-      [this.get('today'), this.get('today_post_count')],
+      // [this.get('today'), this.get('today_post_count')],
     ];
   }),
   data_like_count:  computed('like_count', function(){
@@ -62,7 +62,7 @@ export default DS.Model.extend({
       [this.get('one_before_presterday'), this.get('one_before_presterday_like_count')],
       [this.get('presterday'), this.get('presterday_like_count')],
       [this.get('yesterday'), this.get('yesterday_like_count')],
-      [this.get('today'), this.get('today_like_count')],
+      // [this.get('today'), this.get('today_like_count')],
     ];
   }),
   data_retweet_count:  computed('retweet_count', function(){
@@ -72,7 +72,7 @@ export default DS.Model.extend({
       [this.get('one_before_presterday'), this.get('one_before_presterday_retweet_count')],
       [this.get('presterday'), this.get('presterday_retweet_count')],
       [this.get('yesterday'), this.get('yesterday_retweet_count')],
-      [this.get('today'), this.get('today_retweet_count')],
+      // [this.get('today'), this.get('today_retweet_count')],
     ];
   }),
 
