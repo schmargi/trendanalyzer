@@ -18,6 +18,11 @@
                   = fa-icon 'instagram'
                   |&nbsp;&nbsp;
                   |Instagram
+              span.pull-right 
+                a href=post.url target="_blank"
+                  |Original&nbsp;&nbsp;
+                  = fa-icon 'external-link'
+                  
               br
               h5
                 |#
