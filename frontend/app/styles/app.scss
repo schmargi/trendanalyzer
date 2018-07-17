@@ -3,6 +3,11 @@
 
 @import "ember-cli-bootstrap-4/bootstrap";
 
+
+tr.sum {
+  background-color: rgba(#9ac017, 0.2);
+
+}
 .card-img {
   max-height: 220px;
   object-fit: cover;

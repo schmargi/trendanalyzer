@@ -8,12 +8,17 @@ export default Controller.extend({
   query:                    '',
   tags:                     computed.alias('model'),
   queryParams:              ['location'],
+  totalPosts:               computed.mapBy('filteredTags', 'post_count'),
+  totalPostsCount:          computed.sum('totalPosts'),
+  totalRetweet:             computed.mapBy('filteredTags', 'retweet_count'),
+  totalRetweetCount:        computed.sum('totalRetweet'),
+  totalLike:                computed.mapBy('filteredTags', 'like_count'),
+  totalLikeCount:           computed.sum('totalLike'),
 
   // filteredTags:    computed('tags', 'tags.assignedUsers.@each.first_name', 'tags.assignedUsers.@each.last_name', 'tags.assignedUsers.@each.group', 'tags.assignedUsers.@each.university', 'tags.group.name','query', function(){
 
   filteredTags:    computed('tags', 'tags.title', 'tags.posts.@each.location', 'query', function(){
     const query = this.get('query').toLowerCase();
-    console.log(query);
     const tags = this.get('tags');
     if(isEmpty(query)){ return tags;}
 

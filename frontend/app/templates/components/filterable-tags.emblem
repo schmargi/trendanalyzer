@@ -3,14 +3,22 @@ table.table
     tr
       th scope="col"  #
       th scope="col"  Tag
+      th scope="col"  Regensburger Post Count
       th scope="col"  Total Post Count
       th scope="col"  Platform
       th scope="col"  Total Like Count
       th scope="col"  Retweet Count
       th scope="col"  Popularity Score
   tbody
-
-
+    tr.sum
+      td  
+      td  Summe:
+      td  = totalPostsCount
+      td  
+      td  
+      td  = totalLikeCount
+      td  = totalRetweetCount
+      td  
 
   = each model as |tag index|
     tr
@@ -22,7 +30,11 @@ table.table
             |#
             = tag.title
       td
+        p 
+          = tag.post_count
+      td
         p
+          |12
           = tag.post_count
       td
         = if (and tag.contains_twitter tag.contains_instagram)
@@ -54,3 +66,4 @@ table.table
       td
         p
           = tag.popularity
+    
