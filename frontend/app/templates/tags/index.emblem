@@ -13,4 +13,4 @@ img.logo alt="Brand" src="%PUBLIC_URL%/../../assets/logo.png"
     span#basic-addon1.input-group-text #
   = input class="form-control" aria-describedby="basic-addon1" type="text" id="query" value=query placeholder="search for hashtags"
 
-= filterable-tags model=filteredTags totalPostsCount=totalPostsCount totalLikeCount=totalLikeCount totalRetweetCount=totalRetweetCount
+= filterable-tags model=filteredTags totalPostsCount=totalPostsCount totalLikeCount=totalLikeCount totalRetweetCount=totalRetweetCount query=query

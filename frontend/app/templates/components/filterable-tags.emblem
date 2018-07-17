@@ -10,60 +10,60 @@ table.table
       th scope="col"  Retweet Count
       th scope="col"  Popularity Score
   tbody
-    tr.sum
-      td  
-      td  Summe:
-      td  = totalPostsCount
-      td  
-      td  
-      td  = totalLikeCount
-      td  = totalRetweetCount
-      td  
+    = if query
+      tr.sum
+        td
+        td  Summe:
+        td  = totalPostsCount
+        td
+        td
+        td  = totalLikeCount
+        td  = totalRetweetCount
+        td
 
-  = each model as |tag index|
-    tr
-      th scope="row"
-         inc index
-      td
-        h5
-          = link-to 'tags.tag' tag.id
-            |#
-            = tag.title
-      td
-        p 
-          = tag.post_count
-      td
-        p
-          |12
-          = tag.post_count
-      td
-        = if (and tag.contains_twitter tag.contains_instagram)
-          span
-            = fa-icon 'twitter'
-            |&nbsp;&nbsp;
-          span
-            = fa-icon 'instagram'
-
-        = else
-          = if tag.contains_twitter
+    = each model as |tag index|
+      tr
+        th scope="row"
+           inc index
+        td
+          h5
+            = link-to 'tags.tag' tag.id
+              |#
+              = tag.title
+        td
+          p
+            = tag.post_count
+        td
+          p
+            |12
+            = tag.post_count
+        td
+          = if (and tag.contains_twitter tag.contains_instagram)
             span
-              = fa-icon 'twitter'
-              |&nbsp;&nbsp;
-            span.inactive
-              = fa-icon 'instagram'
-          = if tag.contains_instagram
-            span.inactive
               = fa-icon 'twitter'
               |&nbsp;&nbsp;
             span
               = fa-icon 'instagram'
-      td
-        p
-          = tag.like_count
-      td
-        p
-          = tag.retweet_count
-      td
-        p
-          = tag.popularity
-    
+
+          = else
+            = if tag.contains_twitter
+              span
+                = fa-icon 'twitter'
+                |&nbsp;&nbsp;
+              span.inactive
+                = fa-icon 'instagram'
+            = if tag.contains_instagram
+              span.inactive
+                = fa-icon 'twitter'
+                |&nbsp;&nbsp;
+              span
+                = fa-icon 'instagram'
+        td
+          p
+            = tag.like_count
+        td
+          p
+            = tag.retweet_count
+        td
+          p
+            = tag.popularity
